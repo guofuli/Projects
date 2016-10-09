@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>双飞翼布局</title>
+    <style type="text/css">
+        body {font-size:30px;}
+        #header, #footer {padding:20px 3px; background-color: #cccccc; text-align: center;}
+        #body{margin:10px 0; min-width:400px;}
+        .middle{background-color: #d45a49; color:#ffffff;}
+        .left, .right{background-color: #00bcd4; color:#ffffff;}
+
+        #body {
+            width:100%;
+            margin-right:auto;
+            margin-left:auto;
+        }
+        #body .middle {
+            float:left;
+            width:100%;
+            min-height:30px;
+        }
+        #body .middle .middle-wrap {
+            margin-left:200px;  /*left产生10像素距离*/
+            margin-right:200px; /*与right产生10像素距离*/
+            background:#0f0;
+            min-height:30px;
+        }
+        #body .left {
+            float:left;
+            width:190px;
+            min-height:30px;
+            background:#00bcd4;
+            margin-left:-100%;  /*关键：浮动情况下，负边界值会导致DIV上移，而使用-100%*/
+        }
+        #body .right {
+            float:left;
+            width:190px;
+            min-height:30px;
+            background:#00bcd4;
+            margin-left:-190px; /*同理 使用-190px*/
+        }
+    </style>
+</head>
+<body>
+<div id="header">头部</div>
+
+<div id="body">
+    <div class="middle">
+        <div class="middle-wrap">中间自适应宽度</div>
+    </div>
+
+    <div class="left">左边固定宽度</div>
+
+    <div class="right">右边固定宽度</div>
+</div>
+
+<div id="footer">底部</div>
+</body>
+</html>

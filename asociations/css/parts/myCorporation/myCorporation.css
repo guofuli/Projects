@@ -1,0 +1,143 @@
+        body {
+            background-image: url(../../../imgs/Pepsized_Blur_89.jpg);
+            background-repeat: repeat;
+            background-attachment: fixed;
+            background-position: top left;
+            // overflow: hidden;
+            // background-color: #A7F6F2
+        }
+
+        .large-header {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .main-content {
+            position: relative;
+            top: -100%;
+            margin: 0px;
+            padding: 0px;
+        }
+        a.navbar-logo{
+            display: block;
+            height:56px;
+            width: 100px;
+            margin-right:20px;
+            overflow: hidden;
+        }
+        .header .logo{
+            position: relative;
+            top: -70px;
+            left: -10px;
+            width: 80px;
+            height: 112px;
+            // border:1px solid red;
+            -webkit-transition:top .5s ease-in;
+            -moz-transition:top .5s ease-in;
+            transition:top .5s ease-in;
+        }
+        .header img.logo1 {
+            display: block;
+            position: absolute;
+            top: 8px;
+            left: 0px;
+            width: 80px;
+            height: 40px;
+        }
+         .header img.logo2 {
+            display: block;
+            position: absolute;
+            top: 64px;
+            left: 0px;
+            width: 80px;
+            height: 40px;
+        }
+        .header .logo:hover{top:-14px;}
+
+
+    /**
+ * 本校社团
+ */
+
+        .corporation {
+            margin-top: 20px;
+            // padding-bottom: 0px;
+            border-bottom: 1px solid #A5A3A3;
+        }
+
+        .corporation-palce {
+            height: 24px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            display: block;
+            font-family: "微软雅黑";
+            font-size: 24px;
+            line-height: 24px;
+            text-indent: 8px;
+            color: #FFFFFF;
+            border-left: 5px solid #81cea1;
+            border-radius: 2px;
+        }
+
+        .com {
+            position: relative;
+            width: 134px;
+            height: 180px;
+            margin: auto;
+            padding: 0px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .comPhoto {
+            box-sizing: border-box;
+            width: 134px;
+            height: 134px;
+            overflow: hidden;
+            border-width: 4px;
+            border-style: solid;
+            border-color: #CCCDC9;
+            border-radius: 50%;
+        }
+
+        .comPhoto img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+        }
+
+        p.comName {
+            width: 134px;
+            height: 40px;
+            display: block;
+            overflow: hidden;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+         .no-data{
+            font-size:18px;
+            background-color: rgba(114,209,255,0.73);
+            color:#000000;
+            width: 240px;
+            height:30px;
+            line-height: 30px;
+            border-radius: 10px;
+            text-align: center;
+
+          }
+          .no-data a{
+            display: block;
+            font-size:12px;
+            color:#D8A829;
+            font-weight: bold;
+            width:50px;
+            height:30px;
+            float: right;
+            margin-right:10px;
+            line-height:30px;
+            text-align: center;
+            cursor: pointer;
+          }

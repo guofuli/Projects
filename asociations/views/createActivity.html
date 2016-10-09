@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>创建活动</title>
+    <link rel="icon" href="../imgs/logo-icon.ico">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/flat-ui.css">
+    <link rel="stylesheet" href="../css/parts/createActivity/createActivity.css">
+</head>
+
+<body>
+<div class="container">
+    <!-- 头部开始 -->
+    <div class="header">
+        <nav class="navbar navbar-inverse" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#navbar-collapse-3">
+                    <span class="sr-only">Toggle navigation</span>
+                </button>
+                <a class="navbar-brand navbar-logo" href="homepage.html">
+                    <div class="logo">
+                        <img class="logo1" src="../imgs/logo1.png">
+                        <img class="logo2" src="../imgs/logo2.png">
+                    </div>
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-collapse-3">
+                <ul class="nav navbar-nav">
+                    <li><a href="homepage.html">首页</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">社团 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="myCorporation.html">我的社团</a></li>
+                            <li><a href="createCorporation.html">创建社团</a></li>
+                            <li><a href="#">本校社团</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">活动<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="myActivity.html">我的活动</a></li>
+                            <li><a href="createActivity.html">创建活动</a></li>
+                            <li><a href="#">本校活动</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left" action="#" role="search">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input class="form-control" id="navbarInput-01" type="search" placeholder="Search"/>
+                            <div class="input-group-btn">
+                                <button type="submit" class="btn"><span class="fui-search"></span></button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <ul class="nav navbar-nav navbar-right nav-logoin" style="display: inline-block;">
+                    <li>
+                        <a href="login.html">
+                            <button type="button" class="btn btn-primary btn-xs">登录</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="signup.html">
+                            <button type="button" class="btn btn-default btn-xs">注册</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- 头部结束 -->
+
+    <!-- 主体开始 -->
+    <div class="content">
+        <form role="form" method="post" action="" enctype="multipart/form-data">
+            <legend>创建活动<span class="fui-triangle-right-large"></span></legend>
+
+            <div class="form-group">
+                <label for="activityName">活动名称：</label>
+                <input type="text" class="form-control" id="activityName" placeholder="西华大学羽毛球比赛" required
+                       name="ActivityName">
+            </div>
+            活动宣传图：
+            <input type="file" id="activityImages" name="activityImages"/>
+            <div class="form-group">
+                <label>活动类型：</label>
+                <select data-toggle="select" class="form-control select select-default" id="activityType"
+                        name="ActivityType">
+                    <option>招新</option>
+                    <option>晚会</option>
+                    <option>派对</option>
+                    <option>体育</option>
+                    <option>展览</option>
+                    <option>讲座</option>
+                    <option>聚会</option>
+                    <option>演出</option>
+                    <option>电影</option>
+                    <option>其他</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>选择社团：</label>
+                <select data-toggle="select" class="form-control select select-default" id="associationsName"
+                        name="associationsName">
+                    <option>羽毛球协会</option>
+                    <option>篮球协会</option>
+                    <option>舞蹈协会</option>
+                    <option>音乐协会</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="activityAbstract">活动描述：</label>
+                <textarea class="form-control" id="activityAbstract" rows="3" required id="activityIntroduce"
+                          name="ActivityIntroduce"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="address">活动地址：</label>
+                <input type="text" class="form-control" id="address" placeholder="西华大学学生活动中心" required name="Address">
+            </div>
+            <div class="form-group">
+                <label for="time">活动时间：</label>
+                <div class="row">
+                    <div class="col-md-8 col-sm-6 col-xs-12">
+                        <div class="input-group">
+                            <span class="input-group-addon">开始</span>
+                            <input type="text" class="form-control" placeholder="2016-05-06  08:00" id="timeStart"
+                                   name="TimeStart">
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-6 col-xs-12">
+                        <div class="input-group">
+                            <span class="input-group-addon">结束</span>
+                            <input type="text" class="form-control" placeholder="2016-05-06  18:00" id="timeEnd"
+                                   name="TimeEnd">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label style="display: block;">活动费用： </label>
+                <label class="radio radio-inline" for="radio4a">
+                    <input type="radio" name="optionsRadios" data-toggle="radio" value="free" id="radio4a" required
+                           checked>免费
+                </label>
+                <label class="radio radio-inline" for="radio4b">
+                    <input type="radio" name="optionsRadios" data-toggle="radio" value="charge" id="radio4b"> 收费
+                </label>
+                <div class="input-group input-expense">
+                    <input type="text" class="form-control" name="Cost">
+                    <span class="input-group-addon">元/人</span>
+                </div>
+            </div>
+            <button type="submit" id="submit" class="btn btn-primary btn-lg btn-block">提交</button>
+        </form>
+    </div>
+    <!-- 主体结束 -->
+    <!-- 脚部开始 -->
+    <div class="footer"></div>
+    <!-- 脚部结束 -->
+</div>
+<script src="../js/jquery-2.1.4.min.js"></script>
+<script src="../js/flat-ui.js"></script>
+<script src="../js/application.js"></script>
+<script src="../js/parts/createActivity/createActivity.js"></script>
+</body>
+
+</html>

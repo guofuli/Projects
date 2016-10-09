@@ -1,0 +1,163 @@
+.order-container {
+    position: relative;
+    min-height: 900px;
+    padding: 0px 20px 20px 20px;
+    background-color: #fff;
+}
+
+.clearfix {
+    overflow: hidden;
+    _zoom: 1;
+}
+
+.order-head {
+    height: 50px;
+    font-size: 14px;
+    line-height: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.order-title {
+    float: left;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.order-detail-num {
+    margin-left: 12px;
+    float: left;
+}
+
+.order-back {
+    float: right;
+}
+
+.order-detail-num,
+.order-back {
+    font-size: 12px;
+}
+
+.order-back a {
+    color: #2371f2;
+}
+
+.order-backlist {
+    padding-left: 12px;
+}
+
+.order-row {
+    padding-top: 20px;
+}
+
+.order-left {
+    width: 23%;
+    height: 146px;
+    float: left;
+}
+
+.order-right {
+    width: 77%;
+    height: 146px;
+    padding-top: 15px;
+    padding-left: 34px;
+    float: left;
+}
+
+.order-img,
+.order-detail-item {
+    float: left;
+}
+
+.order-value-box {
+    height: 130px;
+    padding-top: 30px;
+    text-align: center;
+    border-right: 1px solid #ccc;
+}
+
+.value-tag {
+    font-size: 18px;
+    font-weight: bolder;
+    color: #2371f2;
+}
+
+.order-value-link {
+    width: 80px;
+    height: 25px;
+    display: inline-block;
+    line-height: 25px;
+    color: #2371f2;
+    border: 1px solid #2371f2;
+}
+
+.order-detail-item {
+    padding-left: 10px;
+}
+
+.order-detail-item p {
+    margin: 0 0 5px;
+}
+
+.order-detail-title {
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.order-datail-money {
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.red-color {
+    color: #ea4335;
+}
+
+.order-row .order-address {
+    border-right: 0;
+}
+
+.order-row-border {
+    border: 1px solid #ccc;
+}
+
+.order-detail-time {
+    color: #666;
+}
+
+.order-address {
+    width: 50%;
+    background-color: #f5f5f5;
+}
+
+.order-pay {
+    width: 50%;
+    background-color: #fff;
+}
+
+.order-address,
+.order-pay {
+    height: 166px;
+    padding: 0px 22px 0 22px;
+    float: left;
+}
+
+.order-item-body {
+    font-size: 12px;
+}
+
+.order-item-body p {
+    margin-top: 14px;
+}
+
+.order-tel,
+.order-pay-post {
+    float: right;
+}
+
+.order-item-head {
+    height: 50px;
+    font-size: 14px;
+    font-weight: bolder;
+    line-height: 50px;
+    border-bottom: 1px solid #ccc;
+}

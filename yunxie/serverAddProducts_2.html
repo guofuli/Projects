@@ -1,0 +1,270 @@
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<!-- 禁止百度转码
+<!-- <meta http-equiv="Cache-Control" content="no-transform "> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="需求大厅,设计师,材料上,生产商,商城">
+<meta name="description" content="云鞋平台">
+<meta name="author" content="云鞋">
+<title>添加商品</title>
+<link rel="shortcut icon" href="img/favicon.ico" />
+<!-- Bootstrap Core CSS -->
+<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="css/index.css"/>
+<link rel="stylesheet" href="css/serverAddProducts.css">
+<link rel="stylesheet" href="css/h_public.css">
+<script charset="utf-8" src="kindeditor/kindeditor-all-min.js"></script>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="js/html5shiv/html5shiv.min.js"></script>
+<script src="js/respond/respond.min.js"></script>
+<script src="js/jquery-1.9.1.min.js"></script>
+<![endif]-->
+</head>
+<body>
+    <div class="addProducts">
+      <div class="ap-oneline">
+        <div class="ap-title">添加商品</div>
+        <div class="ap-nav">
+          <span><a class="blue" href="">< < 返回</a>商品列表</span>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="pe-line"></div>
+      <div class="oneline m-b-20">
+        <div class="row">
+          <div class="col-md-12">
+            <span class="w-90 fl">商品分类：</span>
+            <div class="fl">
+              <select class="m-r-5" name="" id="">
+                <option value="">一级分类</option>
+              </select>
+              <select class="m-r-5" name="" id="">
+                <option value="">二级分类</option>
+              </select>
+              <select class="m-r-5" name="" id="">
+                <option value="">三级分类</option>
+              </select>
+              <select name="" id="">
+                <option value="">四级分类</option>
+              </select>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+      <div class="twoline  m-b-20">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="fl bai36">
+              <span class="w-90 fl">商品名：</span>
+              <div class="fl">
+                <input type="text">
+              </div>
+              <div class="clear"></div>
+            </div>
+            <div class="fl bai30">
+              <span>区域：</span>
+              <select class="m-r-5" name="" id="">
+                <option value="">四川</option>
+              </select>
+              <select name="" id="">
+                <option value="">成都</option>
+              </select>
+            </div>
+            <div class="fl">
+              <span>年份：</span>
+              <select name="" id="">
+                <option value="">2016</option>
+              </select>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+      <div class="threeline m-b-20">
+        <div class="row">
+         <div class="col-md-12">
+            <div class="fl bai36">
+              <span class="w-90 fl">风格：</span>
+              <input class="fl" type="text">
+              <div class="clear"></div>
+            </div>
+            <div class="fl bai30">
+              <span>类型：</span>
+              <input type="text">
+            </div>
+            <div class="fl">
+              <span>季节：</span>
+              <select name="" id="">
+                <option value="">春季</option>
+              </select>
+            </div>
+            <div class="clear"></div>
+         </div>
+        </div>
+      </div>
+      <div class="fourline m-b-20">
+       <div class="row">
+          <div class="col-md-12">
+            <div class="fl bai36">
+              <span class="w-90 fl">价格：</span>
+              <input class="fl" type="text" placeholder="￥">
+              <div class="clear"></div>
+            </div>
+            <div class="fl bai30">
+              <span class="h-cm">高度：<span class="dw-cm">CM</span></span>
+              <input type="text">
+            </div>
+            <div class="fl">
+              <span>形状：</span>
+              <select name="" id="">
+                <option value="">不限</option>
+              </select>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+      <div class="fiveline m-b-20">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="fl bai36">
+              <span class="w-90 fl">QQ咨询：</span>
+              <input class="fl" type="text">
+              <div class="clear"></div>
+            </div>
+            <div class="fl bai30">
+              <span>标签：</span>
+              <input type="text">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sixline m-b-20">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="fl bai36">
+              <span class="w-90 fl">是否需要邮费：</span>
+              <div class="w-190 fl lh-35">
+                 <input  name="youfei" type="radio"><span class="m-l-5 m-r-30">是</span>
+                 <input name="youfei" type="radio"><span class="m-l-5">否</span>
+              </div>
+            </div>
+            <div class="fl bai30">
+              <span>邮费：</span>
+              <input type="text" placeholder="￥">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sevenline m-b-20">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="bai36 fl">
+            <span class="w-90 fl lh-35">商品类别：</span>
+            <input name="goodsStyle" type="radio"><span class="m-l-5 m-r-10">实物商品</span>
+            <input name="goodsStyle" type="radio"><span class="m-l-5">虚拟商品</span>
+            <div class="clear"></div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="sevenline m-b-20">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="bai36 fl">
+            <span class="w-90 fl lh-35">虚拟商品类型：</span>
+            <input name="goodsStyle" type="radio"><span class="m-l-5 m-r-10">虚拟2D</span>
+            <input name="goodsStyle" type="radio"><span class="m-l-5 m-r-10">虚拟3D</span>
+            <input name="goodsStyle" type="radio"><span class="m-l-5">手稿</span>
+            <div class="clear"></div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="nineline m-b-20">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="fl bai34">
+              <span class="w-90 fl">附件上传：</span>
+              <span class="fl file">
+                <span>上传</span>
+                <input type="file">
+              </span>
+            </div>
+            <div class="bai34 fl">
+              <span>过期时间：</span>
+              <input type="text">
+              <span class="hui m-l-10">购买后过期自动下架</span>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+      <div class="eightline m-b-20">
+        <div class="row">
+          <div class="col-xs-8">
+            <span class="w-90 fl">商品描述：</span>
+            <textarea class="fl t1"></textarea>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+      <div class="nineline m-b-20">
+        <div class="row">
+          <div class="col-xs-8">
+            <span class="w-90 fl">缩略图：</span>
+            <span class="fl file">
+              <span>上传</span>
+              <input type="file">
+            </span>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+      <div class="tenline m-b-20">
+        <div class="row">
+          <div class="col-xs-8">
+            <span class="w-90 fl">商品图片：</span>
+            <span class="fl file">
+              <span>上传</span>
+              <input type="file">
+            </span>
+            <span class="lh-35 hui m-l-20">上传四张图片，图片大小：300PX*300PX</span>>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+      <div class="elevenline m-b-20">
+        <div class="row">
+          <div class="col-xs-12">
+            <span class="w-90 fl">商品详情：</span>
+            <form name="example" method="post" action="demo.php">
+              <textarea name="content1" id="content1" style="width:53%;height:260">
+              </textarea>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="t-line">
+        <button type="submit">确定</button>
+      </div>
+    </div>
+</body>
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+<script>
+  var editor ;
+  KindEditor.ready(function(K){
+    editor = K.create('#content1');
+  });
+</script>
+</html>

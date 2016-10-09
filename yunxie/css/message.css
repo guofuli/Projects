@@ -1,0 +1,148 @@
+.con{
+	background-color: #ffffff;
+	min-width: 750px;
+}
+.next{
+	background-color: #ffffff;
+	align:center;
+	min-height: 1030px;
+}
+table {
+	width: 98%;
+}
+.td1{
+	height: 50px;
+	width: 94%;
+
+}
+.tdd1{
+ padding-right: 2px;
+	white-space:nowrap;
+}
+.fenge
+{
+	padding: 0 10px 0 20px;
+	margin: 0 10px 0 20px;
+	line-height: 2px;
+	height:1px;
+	border: 1px solid #ddd;
+	width: 97.5%;
+}
+.color1
+{
+	color: #2371f2 ; 
+	text-decoration:none;
+}
+.td-b{/* 间距*/
+	 height: 20px;
+}
+.text1{
+	font-size: 14px;
+	font-family:"微软雅黑";
+	text-align: left;
+	padding-left:20px;
+	white-space:nowrap; 
+	font-weight: normal;
+}
+.text3{
+	font-size: 12px;
+	font-family:"微软雅黑";
+	text-align: right;
+	color: #737373;
+}
+.ta{
+margin-right: 20px;
+margin-left: 20px;
+border:2px solid #eeeeee;
+width: 95.5%;
+}
+.tabletitile-tr{
+	background-color: #f5f5f5;
+	height: 40px;
+	border:2px solid #eeeeee;
+}
+.tabletitle-detel{
+	font-size: 12px;
+	color: #666;
+}
+.butt{
+	border: solid 1px #ffffff;
+    height: 26px;
+    width: 65px;
+    font-size: 12px;
+    background-color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+}
+.checkbox{
+	padding-left: 50px;
+	vertical-align: middle;
+}
+.tr1{
+	height: 80px;
+	background-color: #fff;
+	border:2px solid #eeeeee;
+	  vertical-align: middle;
+}
+.tr2{
+	height: 40px;
+	background-color: #fbfbfb;
+	    vertical-align: middle;
+border:2px solid #eeeeee;
+}
+.tr3{
+	height: 40px;
+	background-color: #fff;
+	  vertical-align: middle;
+}
+.textone{
+   padding-left:50px;
+    font-size: 12px;
+    font-family: "微软雅黑";
+    color: #033333;
+      vertical-align: middle;
+      cursor: pointer;
+}
+.texttwo{
+	    font-size: 12px;
+    font-family: "微软雅黑";
+    color: #999999;
+       padding-left: 50px;
+         vertical-align: middle;
+         display: none;
+}
+.date{
+	padding:0 10px 0 52%;
+	font-size: 12px;
+	font-family: "微软雅黑";
+	color: #999999;
+		white-space:nowrap;
+}
+.date2{
+	padding:0 10px 0 53.4%;
+	font-size: 12px;
+	font-family: "微软雅黑";
+	color: #999999;
+		white-space:nowrap;
+}
+.table-foot{
+	height: 60px;
+	text-align: center;
+	vertical-align: middle;
+}
+.butt-l{
+	height: 20px;
+	width: 30px;
+	border: solid 1px #eeeeee;
+}
+.te{
+	color: #666666;
+	font-size: 12px;
+}
+.t1{
+	color: #4285f4;
+	font-size: 12px;
+}
+.t6{
+		font-size: 12px;
+}

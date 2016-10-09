@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+        <title>Register</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="../imgs/logo-icon.ico">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/parts/loginForm/supersized.css">
+        <link rel="stylesheet" href="../css/parts/loginForm/style.css">
+</head>
+ <body oncontextmenu="return false">
+        <div class="page-container">
+            <h1>Sign up</h1>
+            <form >
+				<div>
+					<input type="text" id="account" name="username" class="username" placeholder="Username" autocomplete="off"/>
+                    <span id="message"></span>
+				</div>
+				<div>
+					<input type="email" id="email" name="email" class="email" placeholder="Email" autocomplete="off"/>
+				</div>
+                <div>
+					<input type="password" id="password" name="password" class="password" placeholder="Password" oncontextmenu="return false" onpaste="return false" />
+                </div>
+                <div>
+					<input type="password" id="repeatPassword" name="repeatpassword" class="repeat-password" placeholder="repeat Password" oncontextmenu="return false" onpaste="return false" />
+                </div>
+                <button id="signIn" type="button">Sign up</button>
+                <a href="login.html" style="font-weight:bold;width: 100px;float: right;margin-top: 10px;">Login</a>
+            </form>
+            <span id="message"></span>
+        </div>
+
+        <!-- Javascript -->
+		<script src="http://apps.bdimg.com/libs/jquery/1.6.4/jquery.min.js"></script>
+        <script src="../js/parts/login/supersized.3.2.7.min.js"></script>
+        <script src="../js/parts/login/supersized-init.js"></script>
+        <script type="text/javascript">
+            document.getElementById("account").onblur=function(){
+                var da=new FormData();
+                da.append('account',document.getElementById("account").value);
+                var xhr=new XMLHttpRequest();
+                xhr.open("POST","./action/dosignin.php");
+                xhr.send(da);
+                 xhr.onreadystatechange=function(){
+                    if (xhr.readyState===4) {
+                        if (xhr.status===200) {
+                            document.getElementById("message").innerHTML=xhr.responseText;
+                        }else{
+                            alert("发生错误："+request.status);
+                        }
+                    }
+                }
+            }
+            document.getElementById("signIn").onclick=function(){
+                var xhr=new XMLHttpRequest();
+                xhr.open('GET',"./action/dosignin.php?account="+document.getElementById("account").value+ "&email="+document.getElementById("email").value+ "&password="+document.getElementById("password").value);
+                xhr.send();
+                xhr.onreadystatechange=function(){
+                    if (xhr.readyState===4) {
+                        if (xhr.status===200) {
+                          console.log(xhr.responseText);
+                          console.log(document.getElementById("account").value+" "+document.getElementById("email").value+" "+document.getElementById("password").value);
+                            if (xhr.responseText==="success") {
+                                window.location.href="homepage.html";
+                            } else{
+                                alert("注册失败");
+                            }
+                        }else{
+                            alert("发生错误："+request.status);
+                        }
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

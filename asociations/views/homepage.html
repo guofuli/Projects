@@ -1,0 +1,562 @@
+﻿<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>趣社团</title>
+    <link rel="icon" href="../imgs/logo-icon.ico">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/flat-ui.css">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/parts/homepage/homepage.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width:768px)"
+          href="../css/parts/homepage/hompage-mobile.css">
+</head>
+
+<body>
+<div id="large-header" class="large-header">
+    <canvas id="demo-canvas"></canvas>
+    <div class="main-content">
+        <div class="container" id="container">
+            <!-- 头部开始 -->
+            <div class="header">
+                <nav class="navbar navbar-inverse" role="navigation">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target="#navbar-collapse-3">
+                            <span class="sr-only">Toggle navigation</span>
+                        </button>
+                        <a class="navbar-brand navbar-logo" href="homepage.html">
+                            <div class="logo">
+                                <img class="logo1" src="../imgs/logo1.png">
+                                <img class="logo2" src="../imgs/logo2.png">
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="navbar-collapse-3">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="homepage.html">首页</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">社团 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="myCorporation.html">我的社团</a></li>
+                                    <li><a href="createCorporation.html">创建社团</a></li>
+                                    <li><a href="corporation.html">本校社团</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">活动<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="myActivity.html">我的活动</a></li>
+                                    <li><a href="createActivity.html">创建活动</a></li>
+                                    <li><a href="corporation.html">本校活动</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="navbar-form navbar-left" action="#" role="search">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input class="form-control" id="navbarInput-01" type="search" placeholder="Search">
+                                        <span class="input-group-btn">
+                                    <button type="submit" class="btn"><span class="fui-search"></span></button>
+                                        </span>
+                                </div>
+                            </div>
+                        </form>
+                        <ul class="nav navbar-nav navbar-right nav-logoin" style="display: block;">
+                            <li>
+                                <a href="login.html">
+                                    <button type="button" class="btn btn-primary btn-xs">登录</button>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="signup.html">
+                                    <button type="button" class="btn btn-default btn-xs">注册</button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!-- 头部结束 -->
+
+            <!-- 主体开始 -->
+            <div class="content">
+                <!-- 社团头条 -->
+                <div class="news">
+                    <div class="news-palce">社团头条</div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="news-card news-card-lg">
+                                <a href="corporation.html">
+                                    <div class="news-photo">
+                                        <img src="../imgs/prestrain.gif" data-src="../imgs/parts/news/1.jpg">
+                                    </div>
+                                    <div class="news-info" style="background-color: #deb500;">
+                                        <h6 class="news-title">西华大学舞蹈协会招新啦</h6>
+                                        <i class="line"></i>
+                                        <p class="news-abstract">舞蹈协会</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="news-card news-card-sm">
+                                        <a href="corporation.html">
+                                            <div class="news-photo">
+                                                <img src="../imgs/prestrain.gif" data-src="../imgs/parts/news/2.jpg">
+                                            </div>
+                                            <div class="news-info" style="background-color: #b92235;">
+                                                <h6 class="news-title">新生羽毛球比赛圆满完成</h6>
+                                                <i class="line"></i>
+                                                <p class="news-abstract">羽毛球协会</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="news-card news-card-sm">
+                                        <a href="corporation.html">
+                                            <div class="news-photo">
+                                                <img src="../imgs/prestrain.gif" data-src="../imgs/parts/news/3.jpg">
+                                            </div>
+                                            <div class="news-info" style="background-color: #ee7331;">
+                                                <h6 class="news-title">散打协会新成员交流赛</h6>
+                                                <i class="line"></i>
+                                                <p class="news-abstract">散打协会</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="news-card news-card-sm">
+                                        <a href="corporation.html">
+                                            <div class="news-photo">
+                                                <img src="../imgs/prestrain.gif" data-src="../imgs/parts/news/4.jpg">
+                                            </div>
+                                            <div class="news-info" style="background-color: #3d2471;">
+                                                <h6 class="news-title">西华大学化学协会招新啦</h6>
+                                                <i class="line"></i>
+                                                <p class="news-abstract">化学协会</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="news-card news-card-sm">
+                                        <a href="corporation.html">
+                                            <div class="news-photo">
+                                                <img src="../imgs/prestrain.gif" data-src="../imgs/parts/news/5.jpg">
+                                            </div>
+                                            <div class="news-info" style="background-color: #00cacb;">
+                                                <h6 class="news-title">第八届演讲比赛</h6>
+                                                <i class="line"></i>
+                                                <p class="news-abstract">演讲与交流协会</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="news-card news-card-sm">
+                                <a href="corporation.html">
+                                    <div class="news-photo">
+                                        <img src="../imgs/prestrain.gif" data-src="../imgs/parts/news/6.jpg">
+                                    </div>
+                                    <div class="news-info" style="background-color: #BE22ED;">
+                                        <h6 class="news-title">英语晨读</h6>
+                                        <i class="line"></i>
+                                        <p class="news-abstract">英语协会</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="news-card news-card-sm">
+                                <a href="corporation.html">
+                                    <div class="news-photo">
+                                        <img src="../imgs/prestrain.gif" data-src="../imgs/parts/news/7.jpg">
+                                    </div>
+                                    <div class="news-info" style="background-color: #68F854;">
+                                        <h6 class="news-title">数学建模认证杯开始啦</h6>
+                                        <i class="line"></i>
+                                        <p class="news-abstract">数学建模协会</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="news-card news-card-sm">
+                                <a href="corporation.html">
+                                    <div class="news-photo">
+                                        <img src="../imgs/prestrain.gif" data-src="../imgs/parts/news/8.jpg">
+                                    </div>
+                                    <div class="news-info" style="background-color: #2B61DE;">
+                                        <h6 class="news-title">暑期凉山州支教</h6>
+                                        <i class="line"></i>
+                                        <p class="news-abstract">爱华公益协会</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="more">查看更多<span class="fui-arrow-right"></span></div>
+                </div>
+                
+                <!-- 社团活动 -->
+                <div class="activity">
+                    <div class="activity-place">社团活动</div>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="activity-card">
+                                <figure class="effect-sadie">
+                                    <img src="../imgs/prestrain.gif" data-src="../imgs/parts/avtivity/1.jpg"
+                                         style="height: 180px;width: 100%;"/>
+                                    <figcaption class="gradual-color1">
+                                        <h6>羽毛球新生交流赛</h6>
+                                        <p>羽毛球协会</p>
+                                        <a href="activity.html">查看详情</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="activity-card">
+                                <figure class="effect-sadie">
+                                    <img src="../imgs/prestrain.gif" data-src="../imgs/parts/avtivity/2.jpeg"
+                                         style="height: 180px;width: 100%;"/>
+                                    <figcaption class="gradual-color2">
+                                        <h6>篮球比赛</h6>
+                                        <p>篮球协会</p>
+                                        <a href="activity.html">查看详情</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="activity-card">
+                                <figure class="effect-sadie">
+                                    <img src="../imgs/prestrain.gif" data-src="../imgs/parts/avtivity/3.jpg"
+                                         style="height: 180px;width: 100%;"/>
+                                    <figcaption class="gradual-color3">
+                                        <h6>舞蹈交流</h6>
+                                        <p>舞蹈协会</p>
+                                        <a href="activity.html">查看详情</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="activity-card">
+                                <figure class="effect-sadie">
+                                    <img src="../imgs/prestrain.gif" data-src="../imgs/parts/avtivity/4.jpg"
+                                         style="height: 180px;width: 100%;"/>
+                                    <figcaption class="gradual-color4">
+                                        <h6>草坪演唱会</h6>
+                                        <p>音乐协会</p>
+                                        <a href="activity.html">查看详情</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="activity-card">
+                                <figure class="effect-sadie">
+                                    <img src="../imgs/prestrain.gif" data-src="../imgs/parts/avtivity/5.jpg"
+                                         style="height: 180px;width: 100%;"/>
+                                    <figcaption class="gradual-color5">
+                                        <h6>演讲比赛</h6>
+                                        <p>演讲与交流协会</p>
+                                        <a href="activity.html">查看详情</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="activity-card">
+                                <figure class="effect-sadie">
+                                    <img src="../imgs/prestrain.gif" data-src="../imgs/parts/avtivity/6.jpg"
+                                         style="height: 180px;width: 100%;"/>
+                                    <figcaption class="gradual-color6">
+                                        <h6>摄影培训</h6>
+                                        <p>摄影协会</p>
+                                        <a href="activity.html">查看详情</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="activity-card">
+                                <figure class="effect-sadie">
+                                    <img src="../imgs/prestrain.gif" data-src="../imgs/parts/avtivity/7.jpg"
+                                         style="height: 180px;width: 100%;"/>
+                                    <figcaption class="gradual-color7">
+                                        <h6>网球比赛</h6>
+                                        <p>网球协会</p>
+                                        <a href="activity.html">查看详情</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="activity-card">
+                                <figure class="effect-sadie">
+                                    <img src="../imgs/prestrain.gif" data-src="../imgs/parts/avtivity/8.jpg"
+                                         style="height: 180px;width: 100%;"/>
+                                    <figcaption class="gradual-color8">
+                                        <h6>跆拳道训练</h6>
+                                        <p>跆拳道协会</p>
+                                        <a href="activity.html">查看详情</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="more">查看更多<span class="fui-arrow-right"></span></div>
+                </div>
+                <!-- 本校社团 -->
+                <div class="corporation">
+                    <div class="corporation-palce">本校社团</div>
+                    <div class="row">
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div class="com">
+                                <div class="comPhoto">
+                                    <img class="imgInfo" src="../imgs/prestrain.gif"
+                                         data-src="../imgs/parts/corporation/assn-logo-write.jpg">
+                                    <div class="overlay">
+                                        <a href="corporation.html">
+                                            <p>社团详情</p>
+                                        </a>
+                                        <div class="joinButton"><span class="fui-plus-circle"></span></div>
+                                    </div>
+                                </div>
+                                <a href="corporation.php" class="comName">书法协会 </a>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div class="com">
+                                <div class="comPhoto">
+                                    <img class="imgInfo" src="../imgs/prestrain.gif"
+                                         data-src="../imgs/parts/corporation/assn-logo-2.jpg">
+                                    <div class="overlay">
+                                        <a href="corporation.html">
+                                            <p>社团详情</p>
+                                        </a>
+                                        <div class="joinButton"><span class="fui-plus-circle"></span></div>
+                                    </div>
+                                </div>
+                                <a href="corporation.php" class="comName">演讲与交流协会</a>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div class="com">
+                                <div class="comPhoto">
+                                    <img class="imgInfo" src="../imgs/prestrain.gif"
+                                         data-src="../imgs/parts/corporation/assn-logo-1.jpg">
+                                    <div class="overlay">
+                                        <a href="corporation.html">
+                                            <p>社团详情</p>
+                                        </a>
+                                        <div class="joinButton"><span class="fui-plus-circle"></span></div>
+                                    </div>
+                                </div>
+                                <a href="corporation.php" class="comName">英语协会 </a>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div class="com">
+                                <div class="comPhoto">
+                                    <img class="imgInfo" src="../imgs/prestrain.gif"
+                                         data-src="../imgs/parts/corporation/assn-logo-photo.jpg">
+                                    <div class="overlay">
+                                        <a href="corporation.html">
+                                            <p>社团详情</p>
+                                        </a>
+                                        <div class="joinButton"><span class="fui-plus-circle"></span></div>
+                                    </div>
+                                </div>
+                                <a href="corporation.php" class="comName">爱摄影协会 </a>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div class="com">
+                                <div class="comPhoto">
+                                    <img class="imgInfo" src="../imgs/prestrain.gif"
+                                         data-src="../imgs/parts/corporation/assn-logo-write.jpg">
+                                    <div class="overlay">
+                                        <a href="corporation.html">
+                                            <p>社团详情</p>
+                                        </a>
+                                        <div class="joinButton"><span class="fui-plus-circle"></span></div>
+                                    </div>
+                                </div>
+                                <a href="corporation.php" class="comName">书法协会</a>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div class="com">
+                                <div class="comPhoto">
+                                    <img class="imgInfo" src="../imgs/prestrain.gif"
+                                         data-src="../imgs/parts/corporation/assn-logo-write.jpg">
+                                    <div class="overlay">
+                                        <a href="corporation.html">
+                                            <p>社团详情</p>
+                                        </a>
+                                        <div class="joinButton"><span class="fui-plus-circle"></span></div>
+                                    </div>
+                                </div>
+                                <a href="corporation.php" class="comName">书法协会</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div class="com">
+                                <div class="comPhoto">
+                                    <img class="imgInfo" src="../imgs/prestrain.gif"
+                                         data-src="../imgs/parts/corporation/assn-logo-write.jpg">
+                                    <div class="overlay">
+                                        <a href="corporation.html">
+                                            <p>社团详情</p>
+                                        </a>
+                                        <div class="joinButton"><span class="fui-plus-circle"></span></div>
+                                    </div>
+                                </div>
+                                <a href="corporation.php" class="comName">书法协会 </a>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div class="com">
+                                <div class="comPhoto">
+                                    <img class="imgInfo" src="../imgs/prestrain.gif"
+                                         data-src="../imgs/parts/corporation/assn-logo-2.jpg">
+                                    <div class="overlay">
+                                        <a href="corporation.html">
+                                            <p>社团详情</p>
+                                        </a>
+                                        <div class="joinButton"><span class="fui-plus-circle"></span></div>
+                                    </div>
+                                </div>
+                                <a href="corporation.php" class="comName">演讲与交流协会</a>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div class="com">
+                                <div class="comPhoto">
+                                    <img class="imgInfo" src="../imgs/prestrain.gif"
+                                         data-src="../imgs/parts/corporation/assn-logo-1.jpg">
+                                    <div class="overlay">
+                                        <a href="corporation.html">
+                                            <p>社团详情</p>
+                                        </a>
+                                        <div class="joinButton"><span class="fui-plus-circle"></span></div>
+                                    </div>
+                                </div>
+                                <a href="corporation.php" class="comName">英语协会 </a>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div class="com">
+                                <div class="comPhoto">
+                                    <img class="imgInfo" src="../imgs/prestrain.gif"
+                                         data-src="../imgs/parts/corporation/assn-logo-photo.jpg">
+                                    <div class="overlay">
+                                        <a href="corporation.html">
+                                            <p>社团详情</p>
+                                        </a>
+                                        <div class="joinButton"><span class="fui-plus-circle"></span></div>
+                                    </div>
+                                </div>
+                                <a href="corporation.php" class="comName">爱摄影协会 </a>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div class="com">
+                                <div class="comPhoto">
+                                    <img class="imgInfo" src="../imgs/prestrain.gif"
+                                         data-src="../imgs/parts/corporation/assn-logo-write.jpg">
+                                    <div class="overlay">
+                                        <a href="corporation.html">
+                                            <p>社团详情</p>
+                                        </a>
+                                        <div class="joinButton"><span class="fui-plus-circle"></span></div>
+                                    </div>
+                                </div>
+                                <a href="corporation.php" class="comName">书法协会</a>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div class="com">
+                                <div class="comPhoto">
+                                    <img class="imgInfo" src="../imgs/prestrain.gif"
+                                         data-src="../imgs/parts/corporation/assn-logo-write.jpg">
+                                    <div class="overlay">
+                                        <a href="corporation.html">
+                                            <p>社团详情</p>
+                                        </a>
+                                        <div class="joinButton"><span class="fui-plus-circle"></span></div>
+                                    </div>
+                                </div>
+                                <a href="corporation.php" class="comName">书法协会</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="more">查看更多<span class="fui-arrow-right"></span></div>
+                </div>
+            </div>
+            <!-- 主体结束 -->
+            <!-- 脚部开始 -->
+            <div class="footer">
+            </div>
+            <!-- 结束 -->
+        </div>
+    </div>
+</div>
+<div id="corporation-add" class="corporation-add">
+    <div class="corporation-introduction" id="corporation-introduction">
+        <div class="corporation-logo">
+            <img src="../imgs/prestrain.gif" data-src="../imgs/parts/corporation/assn-logo-2.jpg" alt="logo">
+        </div>
+        <div class="activity-box">
+            <h6 id='name' class="corporation-title">西华大学演讲与交流协会</h6>
+            <p><span id="level">校级</span><em>|</em><span id="type">学术专业</span></p>
+        </div>
+        <div class="corporation-info">
+            <div class="corporation-info-place">社团简介</div>
+            <P>演四海之波澜，此声不息；协五洲之鸿儒，此志不渝！</P>
+        </div>
+        <div class="two-button">
+            <button type="button" id="join-btn" class="btn btn-primary btn-sm">申请加入</button>
+            <button type="button" id="detail-btn" class="btn btn-warning btn-sm">社团详情</button>
+        </div>
+        <div class="exit-btn" id="exit-btn"><span class="fui-cross"></span></div>
+    </div>
+</div>
+<script src="../js/jquery-2.1.4.min.js "></script>
+<script src="../js/flat-ui.js "></script>
+<script src="../js/application.js "></script>
+<script src="../js/bgCanvases.js "></script>
+<script src="../js/imageLoad.js "></script>
+<script src="../js/parts/homepage/homepage.js "></script>
+</body>
+</html>

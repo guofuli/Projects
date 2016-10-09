@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+body {
+    min-height: 900px;
+    margin:0px;
+    padding: 0px 20px 20px 20px;
+    background-color: #FFFFFF;
+}
+
+.blue {
+    color: #2371f2;
+}
+
+.verified {
+    min-height: 900px;
+    // height: 956px;
+    margin: 0 20px;
+}
+
+.verified-title {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 58px;
+}
+
+.verified-line {
+    width: 100%;
+    height: 1px;
+    margin-bottom: 20px;
+    background-color: #cccccc;
+}
+
+.company-oneline .headPortrait {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    float: left;
+}
+
+.company-oneline .headPortrait img {
+    width: 100%;
+}
+
+.company-oneline .company-contend {
+    float: left;
+}
+
+.company-oneline .company-contend .company-name {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.company-oneline .company-contend .com-text span {
+    line-height: 25px;
+}
+
+.company-oneline .company-contend .com-text span.havedone {
+    color: #2371f2;
+}

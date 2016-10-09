@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task18</title>
+    <style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .blockArray {
+        display: block;
+        margin-top: 10px;
+        height: 100px;
+    }
+    
+    .block {
+        display: block;
+        float: left;
+        /*height: 100px;*/
+        width: 50px;
+        margin-left: 10px;
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 14px;
+        background-color: red;
+    }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="num">
+    <button id="unshift">左侧入</button>
+    <button id="push">右侧入</button>
+    <button id="shift">左侧出</button>
+    <button id="pop">右侧出</button>
+    <button id="sort">对当前元素排序</button>
+    <ul id="blockArray" class="blockArray"></ul>
+    <script>
+    /*判断输入是否为10~100的数字*/
+    function isNumber(num) {
+        var reg = new RegExp("^[0-9]*$");
+        if (num == "" || !reg.test(num) || num < 10 || num > 100) {
+            alert("请输入一个10~100范围内的整数");
+            return false;
+        } else {
+            return true;
+        }
+
+    }
+    /*冒泡排序（升序）*/
+    function sort(arr) {
+        for (var i = 0; i < arr.length - 1; i++) { //排arr.length-1趟
+            for (var j = 0; j < arr.length - i - 1; j++) { //每趟比较（arr.length-第几趟-1）次
+                if (arr[j] > arr[j + 1]) {
+                    var temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                };
+            }
+        }
+        return arr;
+    }
+    /*创建子元素*/
+    function create(parent, arr) {
+        parent.innerHTML = "";
+        for (var i = 0; i < arr.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "block");
+            li.style.height = arr[i] + "px";
+            li.style.marginTop = 100 - arr[i] + "px";
+            li.innerHTML = arr[i];
+            parent.appendChild(li);
+        };
+    }
+    /*按钮操作*/
+    function processArray() {
+        var num = input.value;
+        var result = isNumber(num);
+        if (result == false) { //如果不是数字，重置输入
+            input.value = "";
+            input.focus();
+        } else {
+            switch (this.getAttribute("id")) {
+                case "unshift":
+                    arr.unshift(num);
+                    break;
+                case "push":
+                    arr.push(num);
+                    break;
+                case "shift":
+                    arr.shift(num);
+                    break;
+                case "pop":
+                    arr.pop(num);
+                    break;
+                case "sort":
+                    sort(arr);
+                    break;
+
+            };
+            // console.log(arr);
+            create(blockArray, arr);
+        }
+    };
+    var input = document.getElementById("num");
+    input.focus(); //自动获取焦点
+    var buttons = document.getElementsByTagName("button");
+    var blockArray = document.getElementById("blockArray");
+    var arr = [];
+    for (var i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener("click", processArray, false);
+    }
+    </script>
+</body>
+
+</html>

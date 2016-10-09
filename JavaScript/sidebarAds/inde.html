@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #testDiv1 { width:225px;height:97px;position:absolute; right:0;background-color: #0aa770;}
+    </style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>上下滑动侧边栏</title>
+    <script type="text/javascript">
+       window.onload= window.onscroll = function () {
+           //window.onload= window.onscroll=function(){}兼容IE浏览器
+            var sDiv = document.getElementById('testDiv1');
+            // document.body.scrollTop   兼容谷歌浏览器
+            //  document.documentElement.scrollTop  兼容IE浏览器
+            //滚动点离浏览器顶部的距离
+            var varTop=document.documentElement.scrollTop||document.body.scrollTop;
+            //sDiv.style.top=scrollTop+(document.documentElement.clientHeight-sDiv.offsetHeight)/2+'px';
+            var t = varTop + (document.documentElement.clientHeight - sDiv.offsetHeight) / 2;
+            //给DIV的高赋值
+            //document.documentElement.clientHeight可见区域的高度
+            //sDiv.style.top=scrollTop+(document.documentElement.clientHeight-sDiv.offsetHeight)/2+'px';
+            //让速度发生变化
+            startMove(parseInt(t),7);
+        };
+        var varTimer = null;
+        function startMove(destination,speed) {
+            var sDiv = document.getElementById('testDiv1');
+            //开启一个定时器
+            clearInterval(varTimer);
+            varTimer = setInterval(function () {
+                //div一开始离目标的距离除以speed =div移动的速度  div距离越近  速度越小
+                //destination:目标需移动的距离；sDiv.offsetTop目标已经移动的距离
+                var varSpeed = (destination - sDiv.offsetTop) / speed;
+                //Round是四舍五入 ceil向上取整。。floor向下取整
+                varSpeed = varSpeed > 0 ? Math.ceil(varSpeed) : Math.floor(varSpeed);
+                //到达目的地  清除定时器
+                if (sDiv.offsetTop == destination) {
+                    clearInterval(varTimer);
+                }
+                else {
+                    //移动
+                    sDiv.style.top = sDiv.offsetTop + varSpeed + 'px';
+                }
+            }, 30);
+        }
+    </script>
+</head>
+<body style="height:3000px;">
+<div id="testDiv1"></div>
+</body>
+</html

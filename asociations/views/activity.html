@@ -1,0 +1,465 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>西华大学演讲与交流协会</title>
+    <link rel="icon" href="../imgs/logo-icon.ico">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/flat-ui.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/parts/activity/activity.css">
+    <link rel="stylesheet" type="text/css" href="../css/parts/activity/activity-mobile.css"
+          media="screen and (max-width:768px)">
+</head>
+
+<body>
+<div id="large-header" class="large-header">
+    <canvas id="demo-canvas"></canvas>
+    <div class="main-content">
+        <div class="container" id="container">
+            <!-- 头部开始 -->
+            <div class="header">
+                <nav class="navbar navbar-inverse" role="navigation">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target="#navbar-collapse-3">
+                            <span class="sr-only">Toggle navigation</span>
+                        </button>
+                        <a class="navbar-brand navbar-logo" href="homepage.html">
+                            <div class="logo">
+                                <img class="logo1" src="../imgs/logo1.png">
+                                <img class="logo2" src="../imgs/logo2.png">
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="navbar-collapse-3">
+                        <ul class="nav navbar-nav">
+                            <li><a href="homepage.html">首页</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">社团 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="myCorporation.html">我的社团</a></li>
+                                    <li><a href="createCorporation.html">创建社团</a></li>
+                                    <li><a href="#">本校社团</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="activity.html" class="dropdown-toggle" data-toggle="dropdown">活动<b
+                                        class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="myActivity.html">我的活动</a></li>
+                                    <li><a href="createActivity.html">创建活动</a></li>
+                                    <li><a href="#">本校活动</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="navbar-form navbar-left" action="#" role="search">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input class="form-control" id="navbarInput-01" type="search" placeholder="Search">
+                                        <span class="input-group-btn">
+                                    <button type="submit" class="btn"><span class="fui-search"></span></button>
+                                        </span>
+                                </div>
+                            </div>
+                        </form>
+                        <ul class="nav navbar-nav navbar-right nav-logoin" style="display: block;">
+                            <li>
+                                <a href="login.html">
+                                    <button type="button" class="btn btn-primary btn-xs">登录</button>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="signup.html">
+                                    <button type="button" class="btn btn-default btn-xs">注册</button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!-- 头部结束 -->
+
+            <!-- 主体开始 -->
+            <div class="content">
+                <div class="row">
+                    <!-- 左侧栏 -->
+                    <div class="row-left col-md-9 col-sm-8 col-xs-12">
+                        <!-- 导航 -->
+                        <nav class="corporation-navbar">
+                            <ul>
+                                <li>
+                                    <a id="associations" href="corporation.html">社团首页</a>
+                                </li>
+                                <li>
+                                    <a href="">社团资料</a>
+                                </li>
+                                <li class="active">
+                                    <a href="activity.html">社团活动</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- 活动信息 -->
+                        <div class='activity'>
+                            <div class='activity'>
+                                <div class='activity-box'>
+                                    <div class='photo-block'>
+                                        <img src='../imgs/prestrain.gif' data-src='../imgs/parts/avtivity/5.jpg'>
+                                    </div>
+                                    <div class='activity-info'>
+                                        <h6>第十一届演讲大赛</h6>
+                                        <P class='wrop'><span class='fui-time'></span>2015年06月11日 08:00--2017年07月27日
+                                            22:00</P>
+                                        <p><span class='fui-location'></span>西华大学学生活动中心</p>
+                                        <p><span class='fui-user'></span>18人参加 / 大型活动(200人以上)</p>
+                                        <div class='activity-tag'>
+                                            <span class='fui-tag'></span>
+                                            <ul>
+                                                <li class='tag-hot'>热门</li>
+                                                <li class='tag-today'>今天</li>
+                                                <li class='tag-employ'>招新</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="parter-block">
+                                    <div class="parter-title">
+                                        <span class="fui-user"></span>参加的人<em>127</em>人
+                                        <a href="#" class="right">所有参与者<span class="fui-arrow-right"></span></a>
+                                    </div>
+                                    <div class="parter-list">
+                                        <ul>
+                                            <li>
+                                                <a href="" title="">
+                                                    <img src="../imgs/prestrain.gif"
+                                                         data-src="../imgs/parts/corporation/SideBar/11.jpg" alt="">
+                                                    <span class="nickname">习大大</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" title="">
+                                                    <img src="../imgs/prestrain.gif"
+                                                         data-src="../imgs/parts/corporation/SideBar/12.jpg" alt="">
+                                                    <span class="nickname">彭妈妈</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" title="">
+                                                    <img src="../imgs/prestrain.gif"
+                                                         data-src="../imgs/parts/corporation/SideBar/13.jpg" alt="">
+                                                    <span class="nickname">小马哥</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" title="">
+                                                    <img src="../imgs/prestrain.gif"
+                                                         data-src="../imgs/parts/corporation/SideBar/14.jpg" alt="">
+                                                    <span class="nickname">店小二</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" title="">
+                                                    <img src="../imgs/prestrain.gif"
+                                                         data-src="../imgs/parts/corporation/SideBar/15.jpg" alt="">
+                                                    <span class="nickname">一只特立独行的猪</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" title="">
+                                                    <img src="../imgs/prestrain.gif"
+                                                         data-src="../imgs/parts/corporation/SideBar/14.jpg" alt="">
+                                                    <span class="nickname">老板娘</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" title="">
+                                                    <img src="../imgs/prestrain.gif"
+                                                         data-src="../imgs/parts/corporation/SideBar/14.jpg" alt="">
+                                                    <span class="nickname">小郭</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" title="">
+                                                    <img src="../imgs/prestrain.gif"
+                                                         data-src="../imgs/parts/corporation/SideBar/16.jpg" alt="">
+                                                    <span class="nickname">莫修</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" title="">
+                                                    <img src="../imgs/prestrain.gif"
+                                                         data-src="../imgs/parts/corporation/SideBar/14.jpg" alt="">
+                                                    <span class="nickname">张三</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" title="">
+                                                    <img src="../imgs/prestrain.gif"
+                                                         data-src="../imgs/parts/corporation/SideBar/16.jpg" alt="">
+                                                    <span class="nickname">李四</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" title="">
+                                                    <img src="../imgs/prestrain.gif"
+                                                         data-src="../imgs/parts/corporation/SideBar/15.jpg" alt="">
+                                                    <span class="nickname">王五</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" title="">
+                                                    <img src="../imgs/prestrain.gif"
+                                                         data-src="../imgs/parts/corporation/SideBar/16.jpg" alt="">
+                                                    <span class="nickname">老王</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" title="">
+                                                    <img src="../imgs/prestrain.gif"
+                                                         data-src="../imgs/parts/corporation/SideBar/15.jpg" alt="">
+                                                    <span class="nickname">小刘</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" title="">
+                                                    <img src="../imgs/prestrain.gif"
+                                                         data-src="../imgs/parts/corporation/SideBar/15.jpg" alt="">
+                                                    <span class="nickname">昵称</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 活动介绍 -->
+                            <div class="activity-introduce">
+                                <h6>活动介绍</h6>
+                                <p>
+                                    讲入心，辩入思，诵入情，持入度。这是一个让你张开嘴巴表达自我的地方，这是一个智慧与口才碰撞的舞台。激烈的交锋，是魅力无穷的辩论；激昂的演说，是震撼人心的演讲；你看，主持风采翩翩；你听，《我的南方与北方》，朗诵满怀深情。每一张海报包含我们的细心绘制，每一次活动凝聚我们的精心准备，办公室需要你。在这里，群英云集，带你提升自我，我们志同道合，让梦想熠熠生辉！如果你对辩论、演讲、主持、朗诵感兴趣，如果你有志于加强培训、提升自己的口才，如果你想锻炼自己的处世能力，如果你想结识一帮才华横溢的大神......无论你有怎样的期许，我们都将还会为你带来不一样的惊喜与成长，山东大学学生演讲协会期待你的加入!</p>
+                            </div>
+                            <!-- 留言板 -->
+                            <div class="message">
+                                <h6>留言板<a href="#" class="right">全部留言<span class="fui-arrow-right"></span></a></h6>
+                                <div class="form-group">
+                                    <textarea class="form-control" id="guestbook" placeholder="添加留言..."></textarea>
+                                    <button type="button" id="submit" class="btn btn-primary btn-lg btn-block">发送
+                                    </button>
+                                </div>
+                                <div class="message-card">
+                                    <div class="box">
+                                        <a href="" class="head-picture">
+                                            <img src="../imgs/prestrain.gif"
+                                                 data-src="../imgs/parts/corporation/SideBar/2.jpg" alt="UserLogo">
+                                            <span class="nickname">一只特立独行的猪</span>
+                                        </a>
+                                    </div>
+                                    <p class="message-content">
+                                        仅仅是一阵风也罢了，偏偏是这样永恒，仅仅是一场梦也罢了，偏偏是如此真实，你低头不语，我却难以平静，我终于禁不住要对你说，：下次放屁时，说一声！
+                                    </p>
+                                    <div class="card-bottom">
+                                        <p class="card-bottom-left">
+                                            <span class="fui-time"></span>2015-04-27 16:09
+                                        </p>
+                                        <p class="card-bottom-right">回复<span class="fui-triangle-down-small"></span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="message-card">
+                                    <div class="box">
+                                        <a href="" class="head-picture">
+                                            <img src="../imgs/prestrain.gif"
+                                                 data-src="../imgs/parts/corporation/SideBar/2.jpg" alt="UserLogo">
+                                            <span class="nickname">小马哥</span>
+                                        </a>
+                                    </div>
+                                    <p class="message-content">
+                                        一群蚂蚁爬上了大象的背，但被摇了下来，只有一只蚂蚁死死地抱着大象的脖子不放，下面的蚂蚁大叫：掐死他，掐死他，小样，还他妈反了！
+                                    </p>
+                                    <div class="card-bottom">
+                                        <p class="card-bottom-left">
+                                            <span class="fui-time"></span>2015-04-27 16:09
+                                        </p>
+                                        <p class="card-bottom-right">回复<span class="fui-triangle-down-small"></span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="message-card">
+                                    <div class="box">
+                                        <a href="" class="head-picture">
+                                            <img src="../imgs/prestrain.gif"
+                                                 data-src="../imgs/parts/corporation/SideBar/3.jpg" alt="UserLogo">
+                                            <span class="nickname">赫尔本</span>
+                                        </a>
+                                    </div>
+                                    <p class="message-content">
+                                        四只老鼠吹牛：甲：我每天都拿鼠药当糖吃；乙：我一天不踩老鼠夹脚发痒；丙：我每天不过几次大街不踏实；丁：时间不早了，回家抱猫去咯。
+                                    </p>
+                                    <div class="card-bottom">
+                                        <p class="card-bottom-left">
+                                            <span class="fui-time"></span>2015-04-27 16:09
+                                        </p>
+                                        <p class="card-bottom-right">回复<span class="fui-triangle-down-small"></span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 右侧栏 -->
+                    <div class="row-right col-md-3 col-sm-4 col-xs-12">
+                        <div class="corporation-introduction">
+                            <div class="logo">
+                                <img src="../imgs/prestrain.gif"
+                                     data-src="../imgs/parts/corporation/corporation-logo-speak.jpg" alt="logo">
+                            </div>
+                            <div class="corporation-box">
+
+                                <div class="title">
+                                    <h6 class="corporation-title">西华大学演讲与交流协会</h6>
+                                    <P><span>校级</span><em>/</em><span>学术专业</span></P>
+                                </div>
+                                <div class="corporation-abstract">
+                                    <p>演四海之波澜，此声不息；协五洲之鸿儒，此志不渝！</p>
+                                    <div class="two-button">
+                                        <button type="button" class="btn btn-warning btn-sm">申请加入</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="corporation-fork">
+                            <h6 class="corporation-fork-title">关注者</h6>
+                            <ul class="fork-list">
+                                <li>
+                                    <a href="#"><img src="../imgs/prestrain.gif"
+                                                     data-src="../imgs/parts/corporation/SideBar/15.jpg"
+                                                     alt="UserLogo">
+                                        <p>习大大</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="../imgs/prestrain.gif"
+                                                     data-src="../imgs/parts/corporation/SideBar/14.jpg"
+                                                     alt="UserLogo">
+                                        <p>彭妈妈</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="../imgs/prestrain.gif"
+                                                     data-src="../imgs/parts/corporation/SideBar/13.jpg"
+                                                     alt="UserLogo">
+                                        <p>周星驰</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="../imgs/prestrain.gif"
+                                                     data-src="../imgs/parts/corporation/SideBar/12.jpg"
+                                                     alt="UserLogo">
+                                        <p>郭德纲</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="../imgs/prestrain.gif"
+                                                     data-src="../imgs/parts/corporation/SideBar/11.jpg"
+                                                     alt="UserLogo">
+                                        <p>曾哥</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="../imgs/prestrain.gif"
+                                                     data-src="../imgs/parts/corporation/SideBar/10.jpg"
+                                                     alt="UserLogo">
+                                        <p>老赵</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="../imgs/prestrain.gif"
+                                                     data-src="../imgs/parts/corporation/SideBar/9.jpg"
+                                                     alt="UserLogo">
+                                        <p>小叶</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="../imgs/prestrain.gif"
+                                                     data-src="../imgs/parts/corporation/SideBar/8.jpg"
+                                                     alt="UserLogo">
+                                        <p>希拉里</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="../imgs/prestrain.gif"
+                                                     data-src="../imgs/parts/corporation/SideBar/7.jpg"
+                                                     alt="UserLogo">
+                                        <p>小马哥</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="../imgs/prestrain.gif"
+                                                     data-src="../imgs/parts/corporation/SideBar/6.jpg"
+                                                     alt="UserLogo">
+                                        <p>张三</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="../imgs/prestrain.gif"
+                                                     data-src="../imgs/parts/corporation/SideBar/5.jpg"
+                                                     alt="UserLogo">
+                                        <p>马三</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="../imgs/prestrain.gif"
+                                                     data-src="../imgs/parts/corporation/SideBar/4.jpg"
+                                                     alt="UserLogo">
+                                        <p>莫修</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="../imgs/prestrain.gif"
+                                                     data-src="../imgs/parts/corporation/SideBar/3.jpg"
+                                                     alt="UserLogo">
+                                        <p>李四</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="../imgs/prestrain.gif"
+                                                     data-src="../imgs/parts/corporation/SideBar/2.jpg"
+                                                     alt="UserLogo">
+                                        <p>王麻子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="../imgs/prestrain.gif"
+                                                     data-src="../imgs/parts/corporation/SideBar/1.bmp"
+                                                     alt="UserLogo">
+                                        <p>王四</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 主体结束 -->
+
+                <!-- 脚部开始 -->
+                <div class="footer"></div>
+                <!-- 结束 -->
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/jquery-2.1.4.min.js"></script>
+<script src="../js/flat-ui.js"></script>
+<script src="../js/application.js"></script>
+<script src="../js/bgCanvases.js"></script>
+<script src="../js/imageLoad.js"></script>
+</body>
+
+</html>

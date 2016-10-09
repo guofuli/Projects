@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+.fund-record-container {
+    position: relative;
+    min-height: 900px;
+    padding: 0px 20px 20px 20px;
+    background-color: #fff;
+}
+
+.clearfix {
+    overflow: hidden;
+    _zoom: 1;
+}
+
+.fund-record-head {
+    height: 54px;
+    line-height: 54px;
+    border-bottom: 1px solid #ccc;
+}
+
+.fund-record-title {
+    height: 54px;
+    float: left;
+    font-size: 14px;
+    font-weight: bolder;
+    line-height: 54px;
+}
+
+.fund-record-content {
+    margin-top: 20px;
+}
+
+.nav-pills {
+    font-size: 14px;
+}
+
+.nav-pills li a:hover {
+    text-decoration: none;
+}
+
+.nav-pills li a:active {
+    text-decoration: none;
+}
+
+.fund-record-active a {
+    color: rgb(25, 113, 242);
+}
+
+
+/* 表格 */
+
+.fund-record-table {
+    border: 1px solid #ccc;
+}
+
+.fund-record-table-head {
+    font-size: 14px;
+    font-weight: bolder;
+    background-color: #f5f5f5;
+}
+
+.fund-record-table tr th,
+.fund-record-table tr td {
+    width: 25%;
+    text-align: center;
+}
+
+.fund-record-table tr th {
+    font-size: 14px;
+}
+
+.fund-record-table tr td {
+    font-size: 12px;
+    color: #8a8a8a;
+}
+
+.fund-record-table tr th:nth-child(4) {
+    border-right: 1px solid #ccc;
+}
+
+.fund-record-table tr td:nth-child(4) {
+    color: rgb(234, 67, 53);
+    border-right: 1px solid #ccc;
+}
+
+.fund-record-table>tbody>tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+.fund-record-page {
+    margin: 18px auto;
+}
+
+.fund-record-page-pre,
+.fund-record-page-next {
+    padding: 8px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #f5f5f5;
+}
+
+.fund-record-page a {
+    color: #2371f2;
+}
+
+.fund-count {
+    width: 360px;
+    height: 18px;
+    margin: auto;
+    padding: 0px;
+    display: block;
+    list-style: none;
+}
+
+.fund-count li {
+    width: 180px;
+    height: 18px;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    float: left;
+    font-size: 18px;
+    font-size: 14px;
+    text-align: center;
+    color: #8a8a8a;
+}
+
+.fund-count li strong {
+    color: rgb(234, 67, 53);
+}
+
+.hidden {
+    display: none;
+}

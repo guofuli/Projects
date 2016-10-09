@@ -1,0 +1,211 @@
+/*header*/
+.logo{
+	float: left;
+	margin-top: -18px;
+}
+.nav li{
+	font-size: 20px;	
+}
+.cont-margin{
+     margin-top:50px; 
+}
+
+ /*content*/
+.cont-margin{
+	margin-top: 100px;
+}
+ .team-bg{
+	background-color: #AFF1D4;
+	overflow: hidden;
+}
+.biglogo{
+	width: 240px;
+    height: 270px;
+    margin:auto;
+}
+.biglogo>img{
+	width: 240px;
+	height: 240px;
+}
+.biglogo>p{
+	font-size: 24px;
+	text-indent: 12px;
+	text-align: center;
+}
+.section{
+	height: 250px;
+	margin:auto;
+	color: black;
+	text-align: center;
+}
+.section>h3{
+	padding-top:20px; 
+    font-size: 200%;
+}
+.section>P{
+	margin-top: 10px;
+    font-size: 150%;
+    margin:0 auto;
+    text-align: center;
+    text-indent: 24px;
+}
+[class*="col-"] {
+  padding-top: 15px;
+  padding-bottom: 15px;	 
+}
+
+.row-shadow{
+	margin-top:20px; 
+	box-shadow: 0 0 6px gray;
+	-weblkit-box-shadow: 0 0 6px gray;
+	-moz-box-shadow: 0 0 6px gray;
+}
+
+.box{
+	height: 200px;
+	width: 200px;
+	margin:0 auto;	 
+}
+.box>.picture{
+	height: 200px;
+	width: 200px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+	overflow: hidden;
+	border:1px solid gray;
+}
+.box>.sex{
+	width: 32px;
+	height: 32px;
+	margin: -40px 156px;
+	border-radius: 16px;
+	-webkit-border-radius: 16px;
+	-moz-border-radius: 16px;
+	overflow: hidden;
+}
+.describe{
+    height: 200px;
+	overflow: hidden;
+}
+.describe ul{
+	list-style: none;
+}
+.describe li{
+	width: 200px;
+	margin-top:4px; 
+	text-indent: 24px;
+	text-align: left top; 
+	vertical-align: top;
+	float: left;
+}
+
+li.name{
+	background-image: url(../images/iconfont-nicheng.png);
+	background-repeat: no-repeat;
+	background-size: 25px 25px;
+}
+.describe li.note{
+	 background-image: url(../images/iconfont-iconfontmoban.png);
+	 background-repeat: no-repeat;
+	 background-size: 20px 20px;
+ }
+ li.technology{
+	 background-image: url(../images/iconfont-2.png);
+	 background-repeat: no-repeat;
+	 background-size: 25px 25px;
+ }
+ li.position{
+	 background-image: url(../images/iconfont-didian.png);
+	 background-repeat: no-repeat;
+	 background-size: 25px 25px;
+ }
+ li.school{
+	 background-image: url(../images/iconfont-xuexiao.png);
+	 background-repeat: no-repeat;
+	 background-size: 25px 25px;
+ }
+li.hobby{
+	background-image: url(../images/iconfont-fillxingquaihao01.png);
+	background-repeat: no-repeat;
+	background-size: 25px 25px;
+}
+li.email{
+	background-image: url(../images/iconfont-emal-3.png);
+	background-repeat: no-repeat;
+	background-size: 25px 25px;
+}
+.weiblog{
+    height: 200px;
+	overflow: hidden;
+}	
+.weiblog>img{
+	 display: block;
+	 height: 150px;
+	 width: 150px;
+	 margin: 0 auto; 
+}
+.weiblog_icon{
+	position: relative;
+	width: 128px;
+	margin: 0 auto;
+	text-indent: 25px;
+	font-size: 20px;
+	background-image: url(../images/iconfont-weibo.png);
+	background-repeat: no-repeat;
+	background-size: 25px 25px;
+}
+
+/*return-top*/
+.return-top{
+   display: none;
+   position: fixed;
+   bottom: 50px;
+   right: 50px;
+   width: 32px;
+   height: 32px;
+   border-radius: 16px;
+   background-color: #E8E2E2; 
+   
+}
+.return-top a{
+   display: block;
+   width: 32px;
+   height: 32px;
+   background-image: url(../images/iconfont-fanhuidingbu.png); 
+   background-size: 32px 32px;
+   background-repeat:no-repeat;
+   background-position:  
+   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .return-top{
+     display: block;
+     position: fixed;
+     bottom: 20px;
+     right: 18px;
+  }
+}
+
+/*footer*/
+footer{
+	border-top: 1px solid #E6E0E0;
+	margin-top:20px; 
+	width: 100%;
+	height: 60px;
+}
+footer>div{
+	height: 60px;
+	width: 215px;
+	margin: 0 auto;
+}
+footer>div>p{
+	 display: inline-block;
+	 line-height: 50px;	
+	 height: 50px;
+}
+footer img{
+	width: 50px;
+	height: 50px;
+}

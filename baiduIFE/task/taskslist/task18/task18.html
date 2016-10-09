@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task18</title>
+    <style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .block {
+        display: inline-block;
+        height: 100px;
+        width: 100px;
+        margin-left: 10px;
+        margin-top: 10px;
+        text-align: center;
+        line-height: 100px;
+        color: #FFFFFF;
+        font-size: 24px;
+        background-color: red;
+    }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="num">
+    <button id="unshift">左侧入</button>
+    <button id="push">右侧入</button>
+    <button id="shift">左侧出</button>
+    <button id="pop">右侧出</button>
+    <ul id="blockArray"></ul>
+    <script>
+    function isNumber(num) { //判断输入是否为数字
+        var reg = new RegExp("^[0-9]*$");
+        if (num == "" || !reg.test(num)) {
+            alert("请输入一个数字");
+            return false;
+        } else {
+            return true;
+        }
+
+    }
+
+    function processArray() { //按钮操作函数
+        var num = input.value;
+        // console.log(num);
+        var result = isNumber(num);
+        if (result == false) { //如果不是数字，重置输入
+            input.value = "";
+            input.focus();
+        } else {
+            var li = document.createElement("li");
+            li.setAttribute("class", "block");
+            li.innerHTML = num;
+            switch (this.getAttribute("id")) {
+                case "unshift":
+                    blockArray.insertBefore(li, blockArray.firstChild);
+                    break;
+                case "push":
+                    blockArray.appendChild(li);
+                    break;
+                case "shift":
+                    blockArray.removeChild(blockArray.firstChild);
+                    break;
+                case "pop":
+                    blockArray.removeChild(blockArray.lastChild);
+                    break;
+            }
+        }
+
+    };
+
+
+    var input = document.getElementById("num");
+    input.focus(); //自动获取焦点
+    var buttons = document.getElementsByTagName("button");
+    var blockArray = document.getElementById("blockArray");
+    for (var i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener("click", processArray, false);
+    }
+    </script>
+</body>
+
+</html>

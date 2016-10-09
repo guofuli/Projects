@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+        <title>Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="../imgs/logo-icon.ico">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/parts/loginForm/supersized.css">
+        <link rel="stylesheet" href="../css/parts/loginForm/style.css">
+</head>
+ <body oncontextmenu="return false">
+        <div class="page-container">
+            <h1>Login</h1>
+            <form >
+				<div>
+					<input type="text" id="account" name="username" class="username" placeholder="account" autocomplete="off"/>
+				</div>
+                <div>
+					<input type="password" id="password" name="password" class="password" placeholder="Password" oncontextmenu="return false" onpaste="return false" />
+                </div>
+                <button id="submit" type="button">Sign in</button>
+                 <a href="signup.html" style="font-weight:bold;width: 100px;float: right;margin-top: 10px;">Sign Up</a>
+            </form>
+            <span id="message"></span>
+<!--             <div class="connect">
+                <p>If we can only encounter each other rather than stay with each other,then I wish we had never encountered.</p>
+				<p style="margin-top:20px;">如果只是遇见，不能停留，不如不遇见。</p>
+            </div> -->
+        </div>
+		<div class="alert" style="display:none">
+			<h2>消息</h2>
+			<div class="alert_con">
+				<p id="ts"></p>
+				<p style="line-height:70px"><a class="btn">确定</a></p>
+			</div>
+		</div>
+
+        <!-- Javascript -->
+		<script src="http://apps.bdimg.com/libs/jquery/1.6.4/jquery.min.js"></script>
+        <script src="../js/parts/login/supersized.3.2.7.min.js"></script>
+        <script src="../js/parts/login/supersized-init.js"></script>
+		<script src="../js/parts/login/validate.js"></script>
+        <script type="text/javascript">
+            document.getElementById("submit").onclick=function(){
+                var xhr=new XMLHttpRequest();
+                xhr.open("GET","./action/loginaction.php?account="+document.getElementById("account").value+"&password="+document.getElementById("password").value);
+                xhr.send();
+                console.log(document.getElementById("password").value);
+                xhr.onreadystatechange=function(){
+                if (xhr.readyState===4) {
+                  if (xhr.status===200) {
+                    if (xhr.responseText=="success") {
+                        window.location.href="homepage.html";
+                    }else if(xhr.responseText=="you-had-logined"){
+                        alert("您已经登录了,请勿重复登录(V)(́◉◞౪◟◉ )(V)");
+                        window.location.href="homepage.html";
+                    }else{
+                         document.getElementById("message").innerHTML=xhr.responseText;
+                    }
+                  }else{
+                    alert("发生错误："+xhr.status);
+                }
+            }
+        }
+    }
+        </script>
+    </body>
+</html>

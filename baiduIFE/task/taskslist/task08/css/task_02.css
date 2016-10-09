@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #efefef;
+}
+#header{
+    line-height: 80px;
+    width: 100%;
+    height: 80px;
+    background: #337AB7;
+}
+#header h1{
+    margin-left: 60px;
+    color: white;
+    float: left;
+}
+#header ul li{
+    float: right;
+    margin: 0 20px 0 5px;
+}
+#header ul a{
+    color: white;
+    text-decoration: none;
+}
+.common{
+    margin: 0 auto;
+    width: 1250px;
+    background: white;
+    box-shadow: 5px 3px 3px #c0c0c0;
+}
+.text_padding{
+    margin: 20px 30px;
+    padding: 30px 0;
+}
+h2{
+    padding-top: 30px;
+}
+h3{
+    margin-top: 20px;
+    color: silver;
+}
+span.text_author{
+    display: block;
+    color: silver;
+    padding: 10px 0;
+    text-indent: 0;
+}
+p.text{
+    line-height: 28px;
+    text-indent: 2em;
+}
+#first_article img{
+    margin: 10px 0;
+}
+#second_article img{
+    margin: 10px 0;
+}
+#second_article ul li{
+    list-style: none;
+    text-indent: 2em;
+    line-height: 28px;
+}
+#picture .container{
+    width: 240px;
+    border: 1px solid #c0c0c0;
+    margin: 25px 0 0 45px;
+}
+#picture p{
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+#picture img{
+    padding: 20px;
+}
+#last_article ol{
+    margin-left: 50px;
+}
+#last_article ol li{
+    line-height: 28px;
+}
+#last_article table{
+    width: 100%;
+    border-collapse:collapse;
+    vertical-align: middle;
+}
+#last_article table th,td{
+    padding: 5px;
+}
+#last_article table th{
+    text-align: left;
+    background: #444455;
+    color: white;
+}
+#last_article table tr.end{
+    background: #9999aa;
+    font-weight: bolder;
+}
+#register h4{
+    border-left: 3px solid #c0c0c0;
+    padding: 7px 20px;
+}
+#register .from_left{
+    width: 440px;
+    height: 25px;
+    float: left;
+}
+#register .from_right{
+    width: 750px;
+    float: right;
+    height: 25px;
+}
+#register label{
+    float: right;
+}
+#register p{
+    margin: 30px 0 15px 440px;
+    color: silver;
+}
+#register commit_box{
+    display: block;
+    clear: both;
+}
+#register .commit_box{
+    margin-top: 120px;
+    float: inherit;
+    clear: both;
+    width: 1190px;
+    height: 40px;
+    border-radius: 10px;
+    background: #337AB7;
+}
+#footer{
+    width: 100%;
+    height: 70px;
+    background: #337AB7;
+    color: white;
+    line-height: 70px;
+    text-align: center;
+    font-size: small;
+    margin: 20px 0 0 0 ;
+}

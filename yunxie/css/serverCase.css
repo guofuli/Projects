@@ -1,0 +1,190 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+body {
+    min-height: 900px;
+    /*height:936px;*/
+    padding: 0px 20px 20px 20px;
+    background-color: #fff;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+.data-left,.data-right{
+    background-color: #fff;
+}
+.data-left{
+    height: 350px;
+    padding: 10px;
+}
+.data-collectall img{
+    cursor: pointer;
+}
+.data-left img,.banner-logo img,.area-box img{
+    /*display: block;*/
+    max-width: 100%;
+    height: auto;
+}
+.data-right{
+    height: 900px;
+    padding: 0px;
+    margin-left: 20px;
+    margin-right: -20px;
+}
+.data-container{
+    margin: 0 auto;
+    padding: 18px;
+
+}
+.serve-box{
+    background-color: #eee;
+}
+.title-text{
+    font-weight: bolder;
+}
+
+.data-money .data-money-num{
+    font-size: 16px;
+}
+.data-money,.data-deal .data-value,.data-work,.data-address,.data-collect{
+    font-size: 12px;
+}
+.data-value{
+    float: right;
+}
+.data-collectall{
+    float: right;
+}
+.color-red{
+    color: #fb3305;
+}
+.mycase {
+    min-height: 900px;
+    margin: 0 20px;
+    font-size: 12px;
+}
+
+.mycase .mycase-oneline {
+    line-height: 58px;
+}
+
+.mycase .mycase-oneline .mycase-title span {
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.mycase .mycase-oneline .mycase-title ul li {
+    height: 22px;
+    margin: 0 4px;
+    margin-top: 20px;
+    padding: 0 6px;
+    float: left;
+    font-size: 12px;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+.mycase .mycase-oneline .mycase-title li.mycase-title-active {
+    color: #2371f2;
+    background-color: #d0e2ff;
+}
+
+.mycase .mycase-oneline .mycase-nav {
+    float: right;
+    font-size: 14px;
+    line-height: 58px;
+}
+
+.mycase .mycase-oneline .mycase-nav a {
+    color: #2371f2;
+}
+
+.mycase .mycase-line {
+    width: 100%;
+    height: 1px;
+    margin-bottom: 20px;
+    background-color: #cccccc;
+}
+
+.mycase-content ul li {
+    float: left;
+}
+
+.mycase-content ul li.item {
+    width: 23.65%;
+}
+
+.mycase-content ul li.split {
+    width: 1.8%;
+    height: 1px;
+}
+
+.mycase-content-title {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    /*margin-bottom: 10px;*/
+}
+
+.mcm-type span {
+    margin: 0 10px;
+}
+
+.mcm-price {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ea4335;
+}
+
+.mycase-content-ms {
+    margin-bottom: 10px;
+}
+
+
+/*.mycase-content-img{
+	height: 204px;
+}*/
+
+.table-end-footer {
+    width: 100%;
+    height: 80px;
+    font-size: 12px;
+    text-align: center;
+    border-top: 0;
+}
+
+.table-end-footer .tef-content {
+    line-height: 80px;
+}
+
+.table-end-footer .tef-content .now-page {
+    margin-left: 10px;
+    color: #81a9f7;
+}
+
+.table-end-footer .tef-content .total-page {
+    margin-right: 10px;
+}
+
+.table-end-footer .tef-content .total-page span {
+    margin-left: 4px;
+}
+
+.table-end-footer .tef-content a {
+    width: 30px;
+    height: 20px;
+    display: inline-block;
+    line-height: 20px;
+    color: #929292;
+    background-color: #f5f5f5;
+}
+
+.table-end-footer .tef-content a:hover {
+    text-decoration: none;
+}

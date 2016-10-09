@@ -1,0 +1,282 @@
+﻿<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <!-- 禁止百度转码
+<!-- <meta http-equiv="Cache-Control" content="no-transform "> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="需求大厅,设计师,材料上,生产商,商城">
+    <meta name="description" content="云鞋平台">
+    <meta name="author" content="云鞋">
+    <title>服务方个人中心--我的账户</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/account.css" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+<script src="js/html5shiv/html5shiv.min.js"></script>
+<script src="js/respond/respond.min.js"></script>
+<script src="js/jquery-1.9.1.min.js"></script>
+<![endif]-->
+</head>
+<div class="account-container clearfix">
+    <div class="account-head">
+        <div class="account-title">我的账户</div>
+    </div>
+    <div class="account-content">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                <div class="account-info">
+                    <img src="img/ic_user.png">
+                    <h4>成都果心科技有限公司</h4>
+                    <p>你还没认证<a href="">立即认证</a></p>
+                    <p>个人或公司简介...<span class="profile-edit" id="profile-edit">编辑</span></p>
+                    <div class="tel">
+                        <h5>手机号：</h5>
+                        <p>1840824566</p>
+                        <strong style="color:rgb(252,206,105);float: left;margin-left:10px;height: 30px;line-height: 30px;font-size: 14px;">第三方登录</strong>
+                    </div>
+                    <div class="password">
+                        <h5>密码：</h5>
+                        <p>********</p><span id="modify-password">修改密码</span>
+                    </div>
+                    <div class="regist-time">
+                        <h5>注册时间：</h5>
+                        <p>2016-02-34 11:56</p>
+                    </div>
+                    <div class="head-portrait">
+                        <h5>当前头像：</h5><img src="img/ic_user.png"><span style="line-height:70px;">修改头像</span>
+                    </div>
+                    <div class="nickname">
+                        <h5>昵称：</h5>
+                        <p>未填写</p><span>填写</span>
+                    </div>
+                    <div class="sex">
+                        <h5>性别：</h5>
+                        <div class="radio">
+                            <div>
+                                <input type="radio" name="sex" value="none" checked="checked">无
+                            </div>
+                            <div>
+                                <input type="radio" name="sex" value="male">男
+                            </div>
+                            <div>
+                                <input type="radio" name="sex" value="famale">女
+                            </div>
+                        </div>
+                    </div>
+                    <div class="location">
+                        <h5>所在地：</h5>
+                        <p>未填写</p><span>填写</span>
+                    </div>
+                    <div class="email">
+                        <h5>邮箱：</h5>
+                        <p>未填写</p><span>填写</span>
+                    </div>
+                    <div class="qq ">
+                        <h5>QQ号：</h5>
+                        <p>未填写</p><span>填写</span>
+                    </div>
+                    <input style=" button" class="save" value="保存">
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                <div>
+                    <ul class="account-class">
+                        <li class="account-class-active" id="account-class-cash">现金</li>
+                        <li id="account-class-x-coin">X币</li>
+                    </ul>
+                    <div class="cash">
+                        <strong>&#165;58000.00</strong>
+                        <p class="balance-tips">可提现余额</p>
+                        <ul class="cash-operate">
+                            <li id="withdrow-cash"><a href="">提现</a></li>
+                            <li id="recharge"><a data-href="recharge.html">充值</a></li>
+                        </ul>
+                        <p class="no-withdraw">不可提现余额：<strong style="color:rgb(234,67,53);">&#165;500.00</strong></p>
+                        <div style="background-color: rgb(251,188,5);bottom:60px;left:0px;"><a href="">收入&#165;45.00</a><a href="">支出&#165;500.00</a></div>
+                        <div style="bottom: 0px;left: 0px;"><span>发布需求数：<strong style="color: rgb(251,188,5)">234</strong></span><span>成交数：<strong style="color: rgb(251,188,5)">456</strong></span></div>
+                    </div>
+                    <div class="x-coin">
+                        <strong>68000.00</strong>
+                        <p class="balance-tips">余额</p>
+                        <p class="x-coin-operate"><a href="">兑换商品</a></p>
+                        <div><a href="">收入:45.00</a><a href="">支出:500.00</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 提现弹出框 -->
+<div class="withdrow-cash-bg">
+    <div class="withdrow-cash">
+        <p class="withdrow-cash-title">提现</p>
+        <form action="" method="" class="withdrow-cash-form">
+            <div>
+                <label for="tel">手机号：</label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="tel">验证码：</label>
+                <input type="text" style="width:180px;">
+                <input type="button" class="validate" value="获取验证码">
+            </div>
+            <div>
+                <label for="tel">支付宝账号：</label>
+                <input type="text">
+            </div>
+            <div class="withdrow-cash-tips">
+                <span class="ic_tips"></span>
+                <p class="tips">请仔细确认你的支付宝账号</p>
+            </div>
+            <div>
+                <label for="tel">支付宝名称：</label>
+                <input type="text">
+            </div>
+            <input type="button" class="comfirm" value="确定">
+        </form>
+        <span class="ic_close"></span>
+    </div>
+</div>
+<!-- 修改密码弹出框 -->
+<div class="modify-password-bg">
+    <div class="modify-password">
+        <p class="modify-password-title">修改密码</p>
+        <form action="" method="" class="modify-password-form">
+            <div>
+                <label for="tel">原密码：</label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="tel">新密码：</label>
+                <input type="text">
+            </div>
+            <div class="modify-password-tips">
+                <span class="ic_tips"></span>
+                <p class="tips">建议使用字母、数字和符号两种及以上的组合，60-20个字符</p>
+            </div>
+            <div>
+                <label for="tel">确认密码：</label>
+                <input type="text">
+            </div>
+            <div class="modify-password-tips">
+                <span class="ic_tips"></span>
+                <p class="tips">再次输入密码</p>
+            </div>
+            <input type="button" class="comfirm" value="确定">
+        </form>
+        <span class="ic_close"></span>
+    </div>
+</div>
+<!-- 编辑个人或公司简介弹出框 -->
+<div class="profile-edit-bg">
+    <div class="profile-edit">
+        <p class="profile-edit-title">个人或公司简介</p>
+        <form class="profile-edit-form">
+            <label for="profile">简介:</label>
+            <textarea name="profile" id="profile" cols="60" rows="12"> </textarea>
+            <input type="button" class="comfirm" value="确定并支付">
+        </form>
+        <span class="ic_close"></span>
+    </div>
+</div>
+
+<body>
+</body>
+<!-- jQuery -->
+<script src="js/jquery.min.js "></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js "></script>
+<script src="js/index.js "></script>
+<script type="text/javascript">
+/*现金/x币交替显示*/
+$(".account-class li").click(function() {
+    switch ($(this).attr("id")) {
+        case "account-class-cash":
+            $("#account-class-cash").attr('class', 'account-class-active');
+            $("#account-class-x-coin").attr('class', '');
+            $(".cash").css({
+                "display": "block"
+            });
+            $(".x-coin").css({
+                "display": "none"
+            });
+            break;
+        case "account-class-x-coin":
+            $("#account-class-cash").attr('class', '');
+            $("#account-class-x-coin").attr('class', 'account-class-active');
+            $(".cash").css({
+                "display": "none"
+            });
+            $(".x-coin").css({
+                "display": "block"
+            });
+            break;
+    }
+});
+var clientHeight = document.documentElement.clientHeight || document.body.clientHeight;
+var clientWidth = document.documentElement.clientWidth || document.body.clientWidth;
+/*提现弹出框弹出*/
+//点击提现弹出
+$(".cash-operate #withdrow-cash").click(function() {
+    $(".withdrow-cash-bg").css({
+        "display": "block",
+        "width": clientWidth + "px",
+        "height": clientHeight + "px"
+    });
+    return false;
+
+});
+//关闭弹出框按钮
+$(".withdrow-cash-bg .ic_close").click(function() {
+    $(".withdrow-cash-bg").css({
+        "display": "none",
+    })
+});
+/*修改密码弹出框弹出*/
+//点击修改密码弹出
+$("#modify-password").click(function() {
+    $(".modify-password-bg").css({
+        "display": "block",
+        "width": clientWidth + "px",
+        "height": clientHeight + "px"
+    })
+
+});
+//关闭弹出框按钮
+$(".modify-password-bg .ic_close").click(function() {
+    $(".modify-password-bg").css({
+        "display": "none",
+    })
+});
+
+/*个人或公司简介弹出框弹出*/
+//点击编辑密码弹出
+$("#profile-edit").click(function() {
+    $(".profile-edit-bg").css({
+        "display": "block",
+        "width": clientWidth + "px",
+        "height": clientHeight + "px"
+    })
+
+});
+//关闭弹出框按钮
+$(".profile-edit-bg .ic_close").click(function() {
+    $(".profile-edit-bg").css({
+        "display": "none",
+    });
+})
+/*充值按钮*/
+$("#recharge a").click(function(){
+    parent.window.location.href="recharge.html";
+    return false;
+})
+</script>
+
+</html>

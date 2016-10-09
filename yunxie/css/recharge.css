@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background: #FFFFFF;
+}
+.pay{
+	background:#fff;
+	width:100%;
+	height:100%;
+}
+.pay .title{
+	height:100px;
+	line-height:50px;
+	padding:25px 0;
+}
+.pay .title .name{
+	display:inline-block;
+	padding:0 20px;
+	margin-left:50px;
+	font-size:16px;
+	color:#666;
+	border-left:1px solid #ccc;
+}
+.pay .pay-content{
+	width: 100%;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+.pay .pay-content .pay-content-in{
+	background-color: #eeeeee;
+	border: 1px solid #e5e5e5;
+}
+.pay .pay-content .pay-money,.pay-way{
+	margin-left: 50px;
+	padding-top:30px; 
+}
+.pay .pay-content .pay-way .pay-way-list{
+	color: #666666 ;
+	margin-right:20px;
+	cursor: pointer;
+	font-weight: bold;
+}
+.pay .pay-content .pay-way .pay-active{
+	color: #2371f2;
+}
+.pay .pay-content .pay-money input{
+	width: 320px;
+	height: 34px;
+	padding-left:10px;
+	border: 1px solid #cccccc;
+	outline: none; 
+}
+.pay .pay-content .pay-blank{
+	height: 520px;
+	background-color: #FFFFFF;
+	margin: 20px 124px;
+	padding: 20px;
+	border: 1px solid #cccccc;
+}
+.pay-blank .pay-blank-list2{
+	display: none;
+}
+.pay-blank .pay-blank-list1 div{
+	height: 38px;
+	float: left;
+}
+.pay-blank .pay-blank-list1 div img,input{
+	vertical-align:middle;
+}
+.pay-blank .pay-blank-list1 div input{
+	margin-right:10px;
+}
+.pay-blank .pay-blank-list1 div img{
+	margin-right:20px;
+}
+.pay-blank .pay-blank-list2 div{
+	height: 38px;
+	float: left;
+}
+.pay-blank .pay-blank-list2 div img,input{
+	vertical-align:middle;
+}
+.pay-blank .pay-blank-list2 div input{
+	margin-right:10px;
+}
+.pay-blank .pay-blank-list2 div img{
+	margin-right:20px;
+}
+.pay .pay-content .pay-submit{
+	width: 100%;
+	height: 36px;
+	margin:30px 0 50px;
+	position: relative;
+}
+.pay .pay-content .pay-submit button{
+	width: 140px;
+	height: 36px;
+	position: absolute;
+	left: 50%;
+	background-color: #ea4335;
+	color: #FFFFFF;
+	border: 0;
+	margin-left:-70px;
+	outline: none; 
+}

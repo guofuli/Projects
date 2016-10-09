@@ -1,0 +1,226 @@
+.bid-container{
+	background-color: #fff;
+	position: relative;
+	height: auto;
+	min-height: 900px;
+    padding:0px 20px 20px 20px;
+}
+.bid-head{
+	margin: 0 20px 0 20px;
+}
+.bid-content{
+	margin: 20px;
+}
+.bid-head{
+	height:50px;	
+	border-bottom: 1px solid #ccc;
+	font-size: 14px;
+
+}
+.left-title{
+	
+	font-weight: bolder;
+	color: #000;
+	line-height: 50px;
+	float: left;
+}
+.right-count{
+	color: #666;
+	float: right;
+	line-height: 50px;
+}
+.bid-num{
+	color:#fbbc05;
+}
+.bid-table{
+	width: 100%;
+	height: auto;
+	border:1px solid #ccc;
+	
+}
+.bid-table tbody{
+	padding: 0 8px 0 8px;
+}
+.bid-table-head{
+	background-color:#f5f5f5;
+	padding: 8px;
+}
+.bid-table-head th{
+	text-align: center;
+}
+.bid-table-head th:nth-child(1),.bid-detail-row td:nth-child(1){
+	width: 49%;
+}
+.bid-table-head th:nth-child(2),.bid-detail-row td:nth-child(2){
+	width: 18%;
+}
+.bid-detail-row td:nth-child(3){
+	width: 14%;
+}
+/*.bid-detail-row{
+	margin: 0 8px 0 8px;
+}*/
+.bid-detail-money{
+	color: #ea4335;
+	font-size: 16px;
+	font-weight: bold;
+
+}
+.bid-detail-name{
+	font-size: 14px;
+	font-weight: bolder;
+}
+.bid-detail-time{
+	font-size: 14px;
+	color: #666666;
+}
+.bid-detail-type{
+	display: inline-block;
+	background-color: #2371f2;
+	color: #fff;
+	text-align: center;
+	padding: 5px;
+}
+.bid-content .bid-detail-row td{
+	border-top: none;
+}
+
+.bid-detail-row{
+	border-bottom: 1px dashed #ccc;
+}
+.bid-detail-row:nth-last-child(1){
+	border-bottom: 0;
+}
+.bid-detail-row td:nth-child(2),.bid-detail-row td:nth-child(3),.bid-detail-row td:nth-child(4){
+	text-align: center;
+	line-height: 136px;
+	font-size: 12px;
+}
+.bid-detail-row td span:nth-child(2),.bid-detail-row td span:nth-child(3){
+	margin-left: 10px;
+}
+.bid-detail-description,.bid-detail-nowtime{
+	font-size: 12px;
+	color: #666;
+}
+.bid-detail-description{
+	line-height: 30px;
+}
+.bid-detail-tag{
+	display: inline-block;
+	background-color: #fbbc05;
+	color: #fff;
+	font-size: 12px;
+	padding: 8px 15px 6px 10px;
+
+}
+.bid-detail-tag:nth-child(2),.bid-detail-tag:nth-child(3){
+	margin-left: 10px;
+}
+.bid-detail-nowtime{
+	display: inline-block;
+	margin-left:19%;
+/*
+	float: right;
+	margin-top: 10px;*/
+}
+.bid-detail-row td:nth-child(4){
+	color: #2371f2;
+}
+.bid-detail-row td a{
+	color: #2371f2;
+}
+.bid-page{
+	margin: 18px auto;
+	font-size: 12px;
+}
+.bid-page-pre,.bid-page-next{
+	background-color: #f5f5f5;
+	display: inline-block;
+	padding: 3px 6px 3px 8px;
+	cursor: pointer;
+}
+.bid-page a{
+	color: #2371f2;
+}
+tfoot tr td{
+	text-align: center;
+}
+
+
+.modal,.modal-dialog{
+	width: 502px;
+	
+	
+}
+.modal,.modal-content{
+	border-radius: 0;
+}
+.bid-cancel{
+	color: #666;
+	font-size: 12px;
+	line-height: 20px;
+	padding-left: 10px;
+}
+.bid-cancel-money{
+	color: #ea4335;
+}
+.bid-cancel-title{
+	font-size: 16px;
+	font-weight: bolder;
+	color: #2371f2;
+}
+.modal-header{
+	border-bottom:2px solid #2371f2;
+	height: 55px;
+	position: relative;
+}
+.bid-cancel-tips{
+	text-indent: 40px;
+	line-height: 40px;
+}
+form .form-group .bid-cancel-text{
+	width: 374px;
+	height: 188px;
+	float: left;
+	border-radius: 0;
+}
+label{
+	font-size: 14px;
+	float: left;
+}
+.modal .modal-footer{
+	border-top: none;
+	text-align: center;
+	clear: both;
+	height: 80px;
+}
+.modal-footer button{
+	width: 140px;
+	height: 40px;
+	line-height: 28px;
+	text-align: center;
+	border-radius: 0;
+}
+.bid-cancel-close{
+	position: absolute;
+	right: -15px;
+	top: -16px;
+	
+	opacity: 1;
+}
+.modal-open .modal {
+	overflow: visible;
+}
+
+.modal {
+    top: 118px;
+    left: 50px;
+}
+a{
+	outline: none;
+}
+.modal-backdrop.in {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}

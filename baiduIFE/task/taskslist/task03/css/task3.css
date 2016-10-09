@@ -1,0 +1,93 @@
+*{
+	padding:0px;
+	margin: 0;
+}
+body
+{
+	padding:20px;
+}
+.container
+{
+	position: relative;
+	background: #eee;
+	border: solid #999 1px;
+	float:left;
+	
+}
+.team
+{
+
+	position: relative;
+	width: 200px;
+	height: 120px;
+	background-color:white;
+	border: solid #999 1px;
+	margin-left:20px;
+	margin-top:20px;
+
+}
+
+.teamLogo
+{
+	width:80px;
+	height: 80px;
+	background-color:#eee; 
+	position: relative;
+	border: solid #999 1px;
+	margin-left:20px;
+	margin-top:20px;
+}
+
+.team span
+{
+	position: relative;
+	top:-80px;
+	left:105px;
+
+}
+
+/*团队介绍开始*/
+.introduce
+{
+	
+	position: relative;	
+	background-color:white;
+	/*height: 800px;*/
+	margin-left:280px;
+	margin-top:-160px;
+	margin-right: 200px;
+	border: solid #999 1px;
+	margin-top: -120px;
+}
+/*团队介绍结束*/
+
+/*个人logo开始*/
+.logo
+{
+	position: relative;
+	
+	/*margin-top:-425px;*/
+	top:-160px;
+	width:120px;
+	/*height: 380px;*/
+	background: white;
+	border: solid #999 1px;
+	float:right;
+	margin-top:40px;
+	margin-right: 20px;
+
+}
+.logo1
+{
+	position: relative;
+
+	margin-top:10px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	background-color: #eee;
+	width: 80px;
+	height: 80px;
+	border: solid #999 1px;
+
+}
+/*个人logo结束*/

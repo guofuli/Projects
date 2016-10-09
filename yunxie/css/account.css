@@ -1,0 +1,739 @@
+@charset "utf-8";
+/* CSS Document */
+
+.account-container {
+    position: relative;
+    min-height: 900px;
+    padding: 0px 20px 20px 20px;
+    background-color: #fff;
+}
+
+.clearfix {
+    overflow: hidden;
+    _zoom: 1;
+}
+
+.account-head {
+    height: 54px;
+    line-height: 54px;
+    border-bottom: 1px solid #ccc;
+}
+
+.account-title {
+    height: 54px;
+    float: left;
+    font-size: 14px;
+    font-weight: bolder;
+    line-height: 54px;
+}
+
+.account-content {
+    margin-top: 20px;
+}
+
+
+/*left */
+
+.account-info {
+    margin-left: 20px;
+}
+
+.account-info img {
+    width: 70px;
+    height: 70px;
+    float: left;
+}
+
+.account-info h4 {
+    height: 30px;
+    margin: 0px 0px 0px 80px;
+    padding: 0px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 18px;
+    color: rgb(51, 51, 51);
+}
+
+.account-info p {
+    position: relative;
+    height: 20px;
+    margin: 0px 0px 0px 80px;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgb(149, 149, 149);
+}
+
+.account-info a {
+    margin-left: 10px;
+    display: inline-block;
+    color: rgb(25, 113, 242);
+}
+
+.account-info a:hover {
+    text-decoration: none;
+}
+
+span.profile-edit {
+    position: absolute;
+    top: 0px;
+    left: 100px;
+    height: 100%;
+    display: block;
+    float: left;
+    font-size: 14px;
+    line-height: 20px;
+    cursor: pointer;
+    text-align: left;
+    color: rgb(25, 113, 242);
+    border:none;
+}
+
+.tel {
+    margin-top: 20px;
+}
+
+.tel,
+.password,
+.regist-time,
+.nickname,
+.location,
+.sex,
+.location,
+.email,
+.qq {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    display: block;
+    float: left;
+}
+
+.head-portrait {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    float: left;
+}
+
+.account-info .head-portrait h5 {
+    line-height: 70px;
+}
+
+.head-portrait img {
+    margin-left: 10px;
+}
+
+.account-info h5 {
+    width: 70px;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    float: left;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 30px;
+    text-align: right;
+    color: rgb(122, 122, 122);
+}
+
+.tel>p,
+.password>p,
+.regist-time>p,
+.nickname>p,
+.location>p,
+.email>p,
+.qq>p {
+    height: 30px;
+    margin-left: 10px;
+    display: block;
+    float: left;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: left;
+}
+
+.sex>div.radio {
+    height: 30px;
+    margin-top: 0px;
+    margin-left: 10px;
+    display: block;
+    float: left;
+    text-align: left;
+}
+
+.sex>div.radio>div {
+    position: relative;
+    width: 40px;
+    height: 14px;
+    margin: 8px;
+    padding: 0px;
+    float: left;
+    text-indent: 20px;
+}
+
+.sex>div.radio>div>input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 14px;
+    height: 14px;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    float: left;
+}
+
+.tel>span,
+.password>span,
+.nickname>span,
+.location>span,
+.location>span,
+.email>span,
+.qq>span,
+.head-portrait>span {
+    top: -30px;
+    height: 100%;
+    margin-left: 10px;
+    display: block;
+    float: left;
+    font-size: 14px;
+    line-height: 30px;
+    cursor: pointer;
+    text-align: left;
+    color: rgb(25, 113, 242);
+}
+
+input.save {
+    width: 140px;
+    height: 40px;
+    margin-top: 40px;
+    margin-left: 40px;
+    float: left;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border: none;
+    background-color: rgb(234, 67, 53);
+}
+
+
+/* right */
+
+ul.account-class {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 280px;
+    list-style: none;
+}
+
+ul.account-class li {
+    position: relative;
+    width: 140px;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+ul.account-class .account-class-active {
+    color: rgb(35, 113, 242);
+}
+
+ul.account-class .account-class-active:after {
+    position: absolute;
+    z-index: 1000;
+    top: 10px;
+    left: 55px;
+    box-sizing: content-box;
+    width: 0px;
+    height: 0px;
+    display: block;
+    content: "";
+    border-top: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid rgb(245, 245, 245);
+    border-left: 15px solid transparent;
+}
+
+
+/* cash */
+
+.cash {
+    position: absolute;
+    top: 44px;
+    left: 0px;
+    width: 300px;
+    height: 280px;
+    border: 1px solid rgb(238, 238, 238);
+    background-color: rgb(245, 245, 245);
+}
+
+.cash>strong {
+    width: 100%;
+    height: 18px;
+    margin-top: 40px;
+    display: block;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: rgb(234, 67, 53);
+}
+
+.cash>p.balance-tips {
+    width: 100%;
+    height: 18px;
+    margin-top: 5px;
+    display: block;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: rgb(179, 179, 179);
+}
+
+ul.cash-operate {
+    position: absolute;
+    top: 90px;
+    left: 100px;
+    width: 100px;
+    height: 20px;
+    list-style: none;
+}
+
+ul.cash-operate li {
+    width: 50px;
+    height: 20px;
+    display: inline-block;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    color: rgb(51, 51, 51);
+}
+
+.cash .no-withdraw {
+    position: absolute;
+    top: 120px;
+    width: 100%;
+    height: 18px;
+    margin-top: 10px;
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: rgb(51, 51, 51);
+}
+
+.cash div {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    display: block;
+}
+
+.cash div a {
+    width: 50%;
+    height: 60px;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 60px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.cash div span {
+    width: 50%;
+    height: 60px;
+    margin: 0px;
+    padding: 0xp;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 60px;
+    text-align: center;
+    color: rgb(51, 51, 51);
+}
+
+
+/* x-coin */
+
+.x-coin {
+    position: absolute;
+    top: 44px;
+    left: 0px;
+    width: 300px;
+    height: 200px;
+    display: none;
+    border: 1px solid rgb(238, 238, 238);
+    background-color: rgb(245, 245, 245);
+}
+
+.x-coin>strong {
+    width: 100%;
+    height: 18px;
+    margin-top: 40px;
+    display: block;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: rgb(234, 67, 53);
+}
+
+.x-coin>p.balance-tips {
+    width: 100%;
+    height: 18px;
+    margin-top: 5px;
+    display: block;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: rgb(179, 179, 179);
+}
+
+.x-coin-operate {
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    width: 300px;
+    height: 20px;
+}
+
+.x-coin-operate a {
+    width: 300px;
+    height: 20px;
+    display: inline-block;
+    font-size: 14px;
+    text-align: center;
+    color: rgb(35, 113, 242);
+}
+
+.x-coin div {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 60px;
+    display: block;
+    background-color: rgb(251, 188, 5);
+}
+
+.x-coin div a {
+    width: 50%;
+    height: 60px;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 60px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.x-coin a:hover {
+    text-decoration: none;
+}
+
+
+/* 提现弹出框 */
+
+.withdrow-cash-bg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+    background-color: rgba(229, 229, 229, .5);
+}
+
+.withdrow-cash {
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    width: 500px;
+    height: 420px;
+    border: 1px solid rgb(197, 197, 197);
+    background-color: rgb(255, 255, 255);
+}
+
+.withdrow-cash-title {
+    width: 100%;
+    height: 50px;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 50px;
+    text-indent: 15px;
+    color: rgb(35, 113, 224);
+    border-bottom: 2px solid rgb(35, 113, 224);
+}
+
+.withdrow-cash-form {
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    width: 400px;
+    height: 300px;
+    display: block;
+}
+
+.withdrow-cash-form>div {
+    width: 400px;
+    height: 35px;
+    margin-bottom: 20px;
+}
+
+.withdrow-cash-form label {
+    width: 90px;
+    height: 35px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 35px;
+    text-align: right;
+    color: rgb(102, 102, 102);
+}
+
+.withdrow-cash-form input {
+    width: 290px;
+    height: 35px;
+    margin-left: 10px;
+}
+
+.withdrow-cash-form input.validate {
+    width: 100px;
+    height: 35px;
+    margin-left: 10px;
+}
+
+.withdrow-cash-form input.comfirm {
+    position: absolute;
+    top: 260px;
+    left: 50%;
+    width: 140px;
+    height: 40px;
+    margin-left: -70px;
+    color: rgb(255, 255, 255);
+    border: none;
+    background-color: rgb(234, 67, 53);
+}
+
+.withdrow-cash div.withdrow-cash-tips {
+    width: 290px;
+    height: 20px;
+    margin-top: -10px;
+    margin-left: 105px;
+}
+
+.ic_tips {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    float: left;
+    background: url(../img/ic_tips2.png);
+}
+
+.withdrow-cash .tips {
+    width: 290px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgb(182, 182, 182);
+}
+
+.ic_close {
+    position: absolute;
+    top: -18px;
+    right: -18px;
+    width: 18px;
+    height: 18px;
+    display: block;
+    cursor: pointer;
+    background: url(../img/ic_close.png);
+}
+
+
+/* 修改密码弹出框 */
+
+.modify-password-bg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+    background-color: rgba(229, 229, 229, .5);
+}
+
+.modify-password {
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    width: 500px;
+    height: 420px;
+    border: 1px solid rgb(197, 197, 197);
+    background-color: rgb(255, 255, 255);
+}
+
+.modify-password-title {
+    width: 100%;
+    height: 50px;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 50px;
+    text-indent: 15px;
+    color: rgb(35, 113, 224);
+    border-bottom: 2px solid rgb(35, 113, 224);
+}
+
+.modify-password-form {
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    width: 400px;
+    height: 300px;
+    display: block;
+}
+
+.modify-password-form>div {
+    width: 400px;
+    height: 35px;
+    margin-bottom: 20px;
+}
+
+.modify-password-form label {
+    width: 90px;
+    height: 35px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 35px;
+    text-align: right;
+    color: rgb(102, 102, 102);
+}
+
+.modify-password-form input {
+    width: 290px;
+    height: 35px;
+    margin-left: 10px;
+}
+
+.modify-password-form input.validate {
+    width: 100px;
+    height: 35px;
+    margin-left: 10px;
+}
+
+.modify-password-form input.comfirm {
+    position: absolute;
+    top: 260px;
+    left: 50%;
+    width: 140px;
+    height: 40px;
+    margin-left: -70px;
+    color: rgb(255, 255, 255);
+    border: none;
+    background-color: rgb(234, 67, 53);
+}
+
+.modify-password div.modify-password-tips {
+    width: 290px;
+    height: 20px;
+    margin-top: -5px;
+    margin-left: 105px;
+}
+
+.ic_tips {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    float: left;
+    background: url(../img/ic_tips2.png);
+}
+
+.modify-password .tips {
+    width: 290px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgb(182, 182, 182);
+}
+
+.ic_close {
+    position: absolute;
+    top: -18px;
+    right: -18px;
+    width: 18px;
+    height: 18px;
+    display: block;
+    cursor: pointer;
+    background: url(../img/ic_close.png);
+}
+
+
+/* 编辑个人或公司简介弹出框 */
+.profile-edit-bg{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+    background-color: rgba(229,229,229,.5);
+}
+.profile-edit{
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    height: 400px;
+    width: 500px;
+    background-color: rgb(255,255,255);
+    border:1px solid rgb(197,197,197);
+}
+.profile-edit-title{
+    display: block;
+    width:100%;
+    height: 50px;
+    line-height: 50px;
+    border-bottom:2px solid rgb(35,113,224);
+    color: rgb(35,113,224);
+    font-size: 14px;
+    text-indent:15px;
+    font-weight: bold;
+}
+.profile-edit-form{
+    position: relative;
+    margin-top: 20px;
+    width: 420px;
+    height: 280px;
+    margin-left:40px;
+}
+.profile-edit-form label{
+    position: absolute;
+    top: 0px;
+    font-size: 14px;
+    color: rgb(51,51,51);
+}
+.profile-edit-form textarea{
+    position: relative;
+    top: 0px;
+    left: 40px;
+}
+.profile-edit-form input.comfirm{
+    position: absolute;
+    border:none;
+    width: 140px;
+    height: 40px;
+    left: 50%;
+    margin-left: -70px;
+    top: 240px;
+    color: rgb(255,255,255);
+    background-color: rgb(234,67,53);
+}
+.ic_close{
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: -18px;
+    right: -18px;
+    height: 18px;
+    width: 18px;
+    background: url(../img/ic_close.png);
+}

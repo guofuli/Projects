@@ -1,0 +1,38 @@
+*
+{
+	padding: 0;
+	margin: 0;
+}
+
+.circle12
+{
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	border-radius: 0 0 100px;
+}
+
+ .rectangle{  
+
+ 	 width: 100px;  
+    height: 100px;  
+    line-height: 100px;  
+    text-align: center;  
+    margin: 100px;  
+    background-color: red;
+        width: 200px;  
+        border-radius: 15px;  
+        position: relative;  
+        top:200px;
+    }  
+    /*小三角*/  
+    .rectangle::before{  
+        content: "";  
+        width: 0;  
+        height: 0;  
+        border: 15px solid red;  
+        border-color: red transparent transparent transparent;  
+        position:absolute;  
+        bottom: -30px;  
+        left: 40px;  
+    }  

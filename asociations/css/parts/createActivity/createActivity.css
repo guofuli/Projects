@@ -1,0 +1,64 @@
+body {
+    background: url(../../../imgs/Pepsized_Blur_89.jpg);
+}
+a.navbar-logo{
+            display: block;
+            height:56px;
+            width: 100px;
+            margin-right:20px;
+            overflow: hidden;
+        }
+        .header .logo{
+            position: relative;
+            top: -70px;
+            left: -10px;
+            width: 80px;
+            height: 112px;
+            // border:1px solid red;
+            -webkit-transition:top .5s ease-in;
+            -moz-transition:top .5s ease-in;
+            transition:top .5s ease-in;
+        }
+        .header img.logo1 {
+            display: block;
+            position: absolute;
+            top: 8px;
+            left: 0px;
+            width: 80px;
+            height: 40px;
+        }
+         .header img.logo2 {
+            display: block;
+            position: absolute;
+            top: 64px;
+            left: 0px;
+            width: 80px;
+            height: 40px;
+        }
+        .header .logo:hover{top:-14px;}
+ legend {
+     font-size: 24px;
+     color: #1abc9c;
+ }
+ 
+ legend span.fui-triangle-right-large {
+     padding-top: 5px;
+     font-size: 20px;
+     color: #1abc9c;
+ }
+ 
+ label {
+     font-size: 14px;
+     font-weight: bold;
+     color:#FFFFFF;
+ }
+ 
+ .input-group {
+     padding-bottom: 10px;
+ }
+ 
+ .input-expense {
+     width: 50%;
+     margin-top: -45px;
+     margin-left: 150px;
+ }

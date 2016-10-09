@@ -1,0 +1,246 @@
+@media screen and (max-width:768px) {
+    .news-photo {
+        -webkit-animation: newsphotoscalelg 0.25s 0s ease-in both;
+        -moz-animation: newsphotoscalelg 0.25s 0s ease-in both;
+    }
+    @-webkit-keyframes newsphotoscalelg {
+        0% {
+            -webkit-transform: scale(1.0)
+        }
+        50% {
+            -webkit-transform: scale(1.05)
+        }
+        70% {
+            -webkit-transform: scale(1.1)
+        }
+        100% {
+            -webkit-transform: scale(1.2)
+        }
+    }
+    @-moz-keyframes newsphotoscalelg {
+        0% {
+            -moz-transform: scale(1.0)
+        }
+        50% {
+            -moz-transform: scale(1.05)
+        }
+        70% {
+            -moz-transform: scale(1.1)
+        }
+        100% {
+            -moz-transform: scale(1.2)
+        }
+    }
+    .news-info {
+        display: block;
+        -webkit-animation: newsinfoscalelg 0.25s 0s ease-in both;
+        -moz-animation: newsinfoscalelg 0.25s 0s ease-in both;
+    }
+    @-webkit-keyframes newsinfoscalelg {
+        0% {
+            -webkit-transform: scale(1.0);
+            opacity: 0;
+        }
+        50% {
+            -webkit-transform: scale(1.05);
+            opacity: 0.2;
+        }
+        70% {
+            -webkit-transform: scale(1.1);
+            opacity: 0.6;
+        }
+        100% {
+            -webkit-transform: scale(1.2);
+            opacity: 0.9;
+        }
+    }
+    @-moz-keyframes newsinfoscalelg {
+        0% {
+            -moz-transform: scale(1.0);
+            opacity: 0;
+        }
+        50% {
+            -moz-transform: scale(1.05);
+            opacity: 0.2;
+        }
+        70% {
+            -moz-transform: scale(1.1);
+            opacity: 0.6;
+        }
+        100% {
+            -moz-transform: scale(1.2);
+            opacity: 0.9;
+        }
+    }
+    figure.effect-sadie h6 {
+        -webkit-transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);
+        transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);
+        opacity: 1;
+        color: #fff;
+    }
+    figure.effect-sadie figcaption::before,
+    figure.effect-sadie p {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+    figure.effect-sadie a {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+
+/*---------------*/
+
+
+/**申请加入社团弹出框***/
+
+
+/*---------------*/
+
+.corporation-add {
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: none;
+    display: none;
+    background-color: rgba(28, 52, 78, 0.8);
+}
+
+.corporation-introduction {
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 340px;
+    margin-top: -170px;
+    margin-left: -150px;
+    background-color: #FFFFFF;
+    background-image: url(../../../imgs/4.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% 100px;
+}
+
+.corporation-logo {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border: 4px solid #D6D3D3;
+    border-radius: 50px;
+}
+
+.corporation-logo img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.activity-box {
+    position: absolute;
+    top: 40px;
+    left: 120px;
+    width: 150px;
+    height: 60px;
+}
+
+h6.corporation-title {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 150px;
+    height: 20px;
+    margin: auto;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    text-align: center;
+    word-spacing: nowrop;
+    color: #FFFFFF;
+}
+
+ul.star {
+    position: relative;
+    width: 100px;
+    height: 14px;
+    margin: auto;
+    display: block;
+    clear: both;
+    list-style: none;
+}
+
+ul.star li {
+    width: 20%;
+    height: 14px;
+    margin: 0px； float: left;
+}
+
+ul.star li span {
+    display: block;
+    font-size: 12px;
+    -webkit-transform: rotate(-18deg);
+    -ms-transform: rotate(-18deg);
+    transform: rotate(-18deg);
+    color: #FFFFFF;
+}
+
+ul.star li span.orange-color {
+    color: #EFD04E;
+}
+
+.activity-box p {
+    position: relative;
+    width: 150px;
+    height: 14px;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.corporation-info {
+    position: absolute;
+    top: 140px;
+    left: 20px;
+    width: 260px;
+    height: 150px;
+}
+
+.corporation-info-place {
+    height: 16px;
+    margin-bottom: 5px;
+    display: block;
+    font-family: "微软雅黑";
+    font-size: 16px;
+    line-height: 16px;
+    text-indent: 4px;
+    color: #000000;
+    border-left: 4px solid #81cea1;
+    border-radius: 2px;
+}
+
+.corporation-info p {
+    width: 240px;
+    height: 120px;
+    margin: 5px;
+    display: block;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    line-height: 16px;
+    text-indent: 4px;
+    word-wrap: break-word;
+    color: #000000;
+    border-radius: 2px;
+}

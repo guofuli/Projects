@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简单计算器</title>
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+<div id="calculator">
+
+        <div id="calculator_container">
+           <h3>计算器</h3>
+            <table id="calculator_table">
+                <tbody>
+                <tr>
+                    <td colspan="5">
+                        <input type="text" id="resultIpt" readonly="readonly" value="" size="17" maxlength="17" style="width:294px;color: black">
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="←"       class="btn_color1 btn_operation"></td>
+                    <td><input type="button" value="全清"     class="btn_color1 btn_operation"></td>
+                    <td><input type="button" value="清屏"     class="btn_color1"></td>
+                    <td><input type="button" value="﹢/﹣"    class="btn_color2 btn_operation"></td>
+                    <td><input type="button" value="1/×"     class="btn_color2 btn_operation"></td>
+                </tr>
+                <tr>
+                    <td><input type="button"  value="7"     class="btn_color3 btn_number"></td>
+                    <td><input type="button"  value="8"     class="btn_color3 btn_number"></td>
+                    <td><input type="button"  value="9"     class="btn_color3 btn_number"></td>
+                    <td><input type="button"  value="÷"    class="btn_color4 btn_operation"></td>
+                    <td><input type="button"  value="％"    class="btn_color2 btn_operation"></td>
+                </tr>
+                <tr>
+                    <td><input type="button"   value="4"   class="btn_color3 btn_number"></td>
+                    <td><input type="button"   value="5"   class="btn_color3 btn_number"></td>
+                    <td><input type="button"   value="6"   class="btn_color3 btn_number"></td>
+                    <td><input type="button"   value="×"  class="btn_color4 btn_operation"></td>
+                    <td><input type="button"   value="√"  class="btn_color2 btn_operation"></td>
+                </tr>
+                <tr>
+                    <td><input type="button"  value="1"   class="btn_color3 btn_number"></td>
+                    <td><input type="button"  value="2"   class="btn_color3 btn_number"></td>
+                    <td><input type="button"  value="3"   class="btn_color3 btn_number"></td>
+                    <td><input type="button"  value="－"  class="btn_color4 btn_operation"></td>
+                    <td rowspan="2">
+                        <input type="button"  value="＝"  class="btn_color2" style="height: 82px" id="simpleEqu">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="button"  value="0"   class="btn_color3 btn_number" style="width:112px">
+                    </td>
+                    <td><input type="button"  value="."   class="btn_color3 btn_number" ></td>
+                    <td><input type="button"  value="＋"  class="btn_color4 btn_operation"></td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+</div>
+<script type="text/javascript" src="calculator.js"></script>
+</body>
+</html>

@@ -1,0 +1,348 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+.needs-container {
+    position: relative;
+    min-height: 900px;
+    padding: 0px 20px 20px 20px;
+    background-color: #fff;
+}
+
+.clearfix {
+    overflow: hidden;
+    _zoom: 1;
+}
+
+.needs-head {
+    height: 54px;
+    line-height: 54px;
+    border-bottom: 1px solid #ccc;
+}
+
+.needs-title {
+    height: 54px;
+    float: left;
+    font-size: 14px;
+    font-weight: bolder;
+    line-height: 54px;
+}
+
+.needs-mark {
+    height: 54px;
+    float: right;
+    font-size: 14px;
+    line-height: 54px;
+}
+
+.needs-mark strong {
+    color: rgb(251, 188, 5)
+}
+
+.needs-content {
+    margin-top: 20px;
+}
+
+
+/* 表格 */
+
+.needs-table {
+    border: 1px solid #ccc;
+}
+
+.needs-table-head {
+    font-size: 14px;
+    font-weight: bolder;
+    background-color: #f5f5f5;
+}
+
+.needs-table thead tr {
+    height: 42px;
+    line-height: 42px;
+}
+
+.needs-table tbody tr {
+    height: 136px;
+    line-height: 136px;
+}
+
+.needs-table tbody tr td {
+    height: 136px;
+    font-size: 12px;
+}
+
+.needs-table tr td,
+.needs-table-head th {
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.needs-table tr td:nth-child(2),
+.needs-table tr td:nth-child(3) {
+    line-height: 136px;
+}
+
+.needs-table tr td:nth-child(1) {
+    width: 375px;
+}
+
+.needs-table tr td:nth-child(4) {
+    width: 200px;
+}
+
+tr:nth-child(even) {
+    background: #f5f5f5;
+}
+
+.needs-item-info {
+    width: 375px;
+    height: 136px;
+    overflow: hidden;
+}
+
+.needs-item-info .info-top {
+    position: relative;
+    width: 375px;
+    height: 25px;
+}
+
+.needs-item-info .info-top strong {
+    height: 25px;
+    float: left;
+    font-size: 18px;
+    line-height: 25px;
+    color: rgb(234, 67, 53);
+}
+
+.needs-item-info .info-top p {
+    height: 25px;
+    margin-left: 10px;
+    float: left;
+    font-size: 14px;
+    line-height: 25px;
+    color: rgb(51, 51, 51);
+}
+
+.needs-item-info .info-top a {
+    width: 70px;
+    height: 25px;
+    float: right;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(35, 113, 224)
+}
+
+.needs-item-info .info-top a:hover {
+    text-decoration: none;
+}
+
+.needs-item-info .info-center {
+    position: absolute;
+    width: 375px;
+    height: 60px;
+    display: block;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 60px;
+    text-align: left;
+    white-space: nowrap;
+    text-indent: none;
+    text-overflow: ellipsis;
+}
+
+.needs-item-info .info-bottom {
+    position: absolute;
+    position: absolute;
+    top: 100px;
+    left: 10px;
+    width: 375px;
+    height: 40px;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+}
+
+.needs-item-info .info-bottom ul {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 200px;
+    height: 20px;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+}
+
+.needs-item-info .info-bottom ul li {
+    height: 30px;
+    margin-right: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    display: inline-block;
+    float: left;
+    font-size: 12px;
+    line-height: 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(251, 188, 5);
+}
+
+.needs-item-info .info-bottom span {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    font-size: 12px;
+    color: rgb(153, 153, 153);
+}
+
+ul.operate {
+    width: 200px;
+    height: 136px;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    line-height: 136px;
+}
+
+ul.operate li {
+    height: 12px;
+    padding-right: 5px;
+    padding-left: 5px;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 12px;
+    cursor: pointer;
+}
+
+ul.operate li {
+    color: rgb(35, 113, 242);
+}
+
+ul.operate li:nth-child(2) {
+    border-right: 1px solid rgb(35, 113, 242);
+    border-left: 1px solid rgb(35, 113, 242);
+}
+
+.needs-page {
+    margin: 18px auto;
+}
+
+.needs-page-pre,
+.needs-page-next {
+    padding: 8px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #f5f5f5;
+}
+
+.needs-page a {
+    color: #2371f2;
+}
+
+
+/* 取消需求弹出框 */
+
+.cancle-needs-bg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+    background-color: rgba(229, 229, 229, .5);
+}
+
+.cancle-needs {
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    width: 500px;
+    height: 450px;
+    border: 1px solid rgb(197, 197, 197);
+    background-color: rgb(255, 255, 255);
+}
+
+.cancle-needs-title {
+    width: 100%;
+    height: 50px;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 50px;
+    text-indent: 15px;
+    color: rgb(35, 113, 224);
+    border-bottom: 2px solid rgb(35, 113, 224);
+}
+
+.cancle-tips {
+    width: 420px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.ic_tips {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    float: left;
+    background: url(../img/ic_tips2.png);
+}
+
+.cancle-tips .tips {
+    width: 400px;
+    height: 40px;
+    margin-left: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    white-space: pre-line;
+    color: rgb(182, 182, 182);
+}
+
+.cancle-tips .tips strong {
+    color: rgb(235, 85, 74);
+}
+
+.cancle-form {
+    position: relative;
+    width: 420px;
+    height: 280px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.cancle-form label {
+    position: absolute;
+    top: 0px;
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+}
+
+.cancle-form textarea {
+    position: relative;
+    top: 0px;
+    left: 40px;
+}
+
+.cancle-form input.comfirm {
+    position: absolute;
+    top: 240px;
+    left: 50%;
+    width: 140px;
+    height: 40px;
+    margin-left: -70px;
+    color: rgb(255, 255, 255);
+    border: none;
+    background-color: rgb(234, 67, 53);
+}
+
+.ic_close {
+    position: absolute;
+    top: -18px;
+    right: -18px;
+    width: 18px;
+    height: 18px;
+    display: block;
+    cursor: pointer;
+    background: url(../img/ic_close.png);
+}

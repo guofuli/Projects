@@ -1,0 +1,52 @@
+ @media screen and (max-width:768px) {
+
+/* 活动信息*/
+.activity {
+    position: relative;
+}
+.activity-box{
+    position:relative;
+    height:180px;
+    width:100%;
+    top: 20px;
+    left: 0px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 4px #A4A3A3;
+}
+.photo-block {
+    display: none;
+}
+
+.activity-info {
+    width: 100%;
+    height: 180px;
+    display: block;
+    position: absolute;
+    top: 0px;
+    margin: 0px;
+    padding-left: 4px;
+}
+.activity-info h6 {
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.activity-info p {
+    margin: 0px;
+    height: 40px;
+    width: 100%;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+
+/*关注者*/
+
+.row-right{
+   display: none;
+
+}
