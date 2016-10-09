@@ -5,12 +5,12 @@
 
 #### 项目 ####
 
-1. **趣社团**  *（负责前端页面的构建）*
+ 1. **趣社团**  *（负责前端页面的构建）*
 
 - [demo地址](http://moxiufe.cn/Projects/asociations/views/homepage.html)
 - [代码地址](https://github.com/moxiu-fe/Projects/tree/master/asociations)
 
-2. **云鞋平台** *（按照psd设计图绘制需求方人中心等数十个前端页面，兼容IE8）*
+ 2. **云鞋平台** *（按照psd设计图绘制需求方人中心等数十个前端页面，兼容IE8）*
 
 - demo地址：
   - [首页](http://moxiufe.cn/Projects/yunxie/index.html)
