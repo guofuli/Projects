@@ -6,8 +6,8 @@
 #### 项目 ####
 
 1. **趣社团**  *（负责前端页面的构建）*
-* [demo地址](http://115.28.157.124:90/web/asociations/views/homepage.php)
-* [代码地址](https://github.com/moxiu-fe/Projects/tree/master/asociations)
+ - [demo地址](https://moxiufe.cn/Projects/asociations/views/homepage.html)
+ - [代码地址](https://github.com/moxiu-fe/Projects/asociations)
 
 2. **云鞋平台** *（按照psd设计图绘制需求方人中心等数十个前端页面，兼容IE8）*
 
