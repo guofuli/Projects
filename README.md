@@ -92,7 +92,9 @@
 - [demo地址](http://moxiufe.cn/Projects/jQuery/pinterestStyleLayout/index.html)
 - [代码地址](https://github.com/moxiu-fe/Projects/tree/master/jQuery/pinterestStyleLayout)
 
-**15.其他**
+-----------
+
+### 其他 ###
 
 - [代码地址](https://github.com/moxiu-fe/Projects)
 
