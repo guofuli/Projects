@@ -94,7 +94,7 @@
 
 -----------
 
-### 其他 ###
+### 一些常用的函数封装 ###
 
-- [代码地址](https://github.com/moxiu-fe/Projects)
+- [cookie](https://github.com/moxiu-fe/Projects/tree/master/JavaScript/function/cookie)
 
