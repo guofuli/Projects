@@ -94,7 +94,10 @@
 
 -----------
 
-### 一些常用的函数封装 ###
+#### 一些常用的函数封装 ####
 
 - [cookie](https://github.com/moxiu-fe/Projects/tree/master/JavaScript/function/cookie)
-
+- [Array.js](https://github.com/moxiu-fe/Projects/tree/master/JavaScript/function/Array.js)
+- [Number.js](https://github.com/moxiu-fe/Projects/tree/master/JavaScript/function/Number.js)
+- [String.js](https://github.com/moxiu-fe/Projects/tree/master/JavaScript/function/String.js)
+- [viewport](https://github.com/moxiu-fe/Projects/tree/master/JavaScript/function/viewport)
